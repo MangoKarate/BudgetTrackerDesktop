@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Budget Tracker v5.6</title>
+  <meta name="theme-color" content="#0f172a">
+  <meta name="apple-mobile-web-app-title" content="Budget">
+  <link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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">
+  <link rel="icon" type="image/png" sizes="192x192" href="data:image/png;base64,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">
+  <link rel="icon" type="image/png" sizes="180x180" href="data:image/png;base64,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">
+  <style>
+    /* ============================================
+       Family Budget Tracker v5.6 — Design System
+       Palette: slate (text) · blue (accent + income) · red (negative) · green (confirm only)
+       ============================================ */
+    :root{
+      --bg:#f8fafc;
+      --surface:#ffffff;
+      --surface-2:#f1f5f9;
+      --border:#e2e8f0;
+      --border-strong:#cbd5e1;
+      --text:#0f172a;
+      --text-2:#475569;
+      --text-3:#94a3b8;
+      --accent:#2563eb;
+      --accent-2:#1d4ed8;
+      --accent-soft:#eff6ff;
+      --accent-soft-2:#dbeafe;
+      --neg:#dc2626;
+      --neg-soft:#fef2f2;
+      --pos:#0f172a;
+      --confirm:#10b981;
+      --warn:#d97706;
+      --warn-soft:#fef3c7;
+      --shadow-sm:0 1px 2px rgba(15,23,42,.04);
+      --shadow:0 1px 3px rgba(15,23,42,.06),0 1px 2px rgba(15,23,42,.04);
+      --shadow-md:0 4px 12px -2px rgba(15,23,42,.08),0 2px 4px -2px rgba(15,23,42,.04);
+      --shadow-lg:0 12px 32px -8px rgba(15,23,42,.18),0 4px 12px -4px rgba(15,23,42,.08);
+      --radius-sm:6px;
+      --radius:8px;
+      --radius-lg:12px;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Segoe UI',Roboto,sans-serif;background:var(--bg);min-height:100vh;font-size:14px;color:var(--text);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+
+    /* Header */
+    .header{background:var(--surface);border-bottom:1px solid var(--border);padding:14px 24px;position:sticky;top:0;z-index:40;box-shadow:var(--shadow-sm)}
+    .header-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .header-left{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+    .header-title{font-size:1.05rem;font-weight:700;color:var(--text);white-space:nowrap;letter-spacing:-.2px;display:inline-flex;align-items:center;gap:8px}
+    .header-version{font-size:.65rem;font-weight:700;color:var(--accent);background:var(--accent-soft);padding:2px 7px;border-radius:5px;letter-spacing:.3px}
+    .header-updated{font-size:.7rem;color:var(--text-3);font-weight:400;margin-left:4px;white-space:nowrap}
+    .month-nav{display:flex;align-items:center;gap:2px;background:var(--surface-2);border-radius:8px;padding:3px}
+    .month-nav-btn{width:30px;height:30px;border:none;background:transparent;border-radius:6px;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--text-2);transition:all .15s}
+    .month-nav-btn:hover{background:var(--surface);color:var(--text);box-shadow:var(--shadow-sm)}
+    .month-nav-btn:active{transform:scale(.95)}
+    .month-label-wrap{position:relative;display:inline-flex;align-items:center;gap:6px;padding:5px 14px;min-width:170px;justify-content:center;cursor:pointer;border-radius:6px;transition:all .12s}
+    .month-label-wrap:hover{background:var(--surface);box-shadow:var(--shadow-sm)}
+    .month-label{font-size:.95rem;font-weight:600;color:var(--text);letter-spacing:-.1px;line-height:1.2;user-select:none}
+    .month-caret{color:var(--text-3);display:flex;transition:transform .12s}
+    .month-label-wrap:hover .month-caret{color:var(--text-2);transform:translateY(1px)}
+    .month-picker-input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;border:none;padding:0;font:inherit;color:transparent;background:transparent}
+    .month-picker-input::-webkit-calendar-picker-indicator{opacity:0;display:block;width:100%;height:100%;position:absolute;inset:0}
+    .month-today-btn{margin-left:8px;display:inline-flex;align-items:center;gap:5px;padding:6px 11px;font-size:.78rem;font-weight:600;border:1px solid var(--border);background:var(--surface);color:var(--text-2);border-radius:6px;cursor:pointer;transition:all .12s;white-space:nowrap;font-family:inherit;line-height:1}
+    .month-today-btn:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-soft-2)}
+    .month-today-btn:active{transform:translateY(1px)}
+    .month-today-btn.on-today{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-soft-2);cursor:default;opacity:.7}
+    .month-today-btn.on-today:hover{background:var(--accent-soft);transform:none}
+    .header-buttons{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+
+    /* Buttons */
+    .btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;font-size:.875rem;font-weight:500;border-radius:var(--radius-sm);border:1px solid transparent;cursor:pointer;transition:all .12s ease;white-space:nowrap;font-family:inherit;line-height:1}
+    .btn:active{transform:translateY(1px)}
+    .btn-primary{background:var(--accent);color:#fff;box-shadow:0 1px 2px rgba(37,99,235,.2),inset 0 1px 0 rgba(255,255,255,.15)}
+    .btn-primary:hover{background:var(--accent-2);box-shadow:0 2px 6px rgba(37,99,235,.3),inset 0 1px 0 rgba(255,255,255,.15)}
+    .btn-secondary{background:var(--surface);color:var(--text-2);border-color:var(--border)}
+    .btn-secondary:hover{background:var(--surface-2);color:var(--text);border-color:var(--border-strong)}
+    .btn-ghost{background:none;color:var(--text-2);border:1px solid transparent;padding:7px 9px}
+    .btn-ghost:hover{background:var(--surface-2);color:var(--text)}
+    .btn-danger{color:var(--neg)}.btn-danger:hover{background:var(--neg-soft);border-color:#fecaca}
+    .btn-sm{padding:6px 11px;font-size:.8125rem}
+
+    .container{max-width:1280px;margin:0 auto;padding:20px 24px 28px}
+
+    /* Summary: hero + stat cards */
+    .summary-bar{display:grid;grid-template-columns:minmax(320px,1.4fr) 2fr;gap:14px;margin-bottom:18px}
+    .stat-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .summary-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-sm);position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:center}
+    .summary-label{font-size:.7rem;font-weight:600;color:var(--text-3);text-transform:uppercase;letter-spacing:.6px;margin-bottom:6px}
+    .summary-value{font-size:1.35rem;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.3px;line-height:1.1}
+    .summary-value.positive{color:var(--confirm)}
+    .summary-value.negative{color:var(--neg)}
+    .summary-value.neutral{color:var(--text)}
+
+    /* Hero ending-balance card */
+    .hero-card{background:linear-gradient(150deg,#0f172a,#1e293b 60%,#312e81 150%);border-radius:var(--radius-lg);padding:20px 22px;color:#fff;box-shadow:var(--shadow-md);position:relative;overflow:hidden}
+    .hero-card::after{content:'';position:absolute;top:-50%;right:-8%;width:240px;height:240px;background:radial-gradient(circle,rgba(99,102,241,.35),transparent 70%);pointer-events:none}
+    .hero-label{font-size:.7rem;font-weight:700;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;position:relative}
+    .hero-balance{font-size:2.6rem;font-weight:800;letter-spacing:-1.4px;line-height:1;margin-bottom:5px;position:relative}
+    .hero-balance.neg{color:#fca5a5}
+    .hero-sub{font-size:.78rem;color:rgba(255,255,255,.5);font-weight:500;margin-bottom:16px;position:relative;display:flex;align-items:center;gap:7px}
+    .hero-start-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.4)}
+    .hero-progress{position:relative}
+    .hero-progress-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px}
+    .hero-progress-label{font-size:.66rem;font-weight:700;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.7px}
+    .hero-progress-val{font-size:.74rem;font-weight:700;color:rgba(255,255,255,.85);font-variant-numeric:tabular-nums}
+    .hero-progress-track{height:8px;background:rgba(255,255,255,.13);border-radius:5px;overflow:hidden}
+    .hero-progress-fill{height:100%;border-radius:5px;transition:width .5s cubic-bezier(.4,0,.2,1)}
+
+    /* Toolbar */
+    .toolbar{display:flex;align-items:center;gap:10px;margin-bottom:14px;flex-wrap:wrap}
+    .toolbar-left{display:flex;align-items:center;gap:8px;flex:1;flex-wrap:wrap}
+    .toolbar-right{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+    .search-input{padding:8px 12px 8px 34px;font-size:.875rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'/%3E%3C/svg%3E") 10px center no-repeat;width:220px;font-family:inherit;color:var(--text);transition:all .15s}
+    .search-input::placeholder{color:var(--text-3)}
+    .search-input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+    .filter-select{padding:8px 30px 8px 12px;font-size:.875rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") right 10px center no-repeat;appearance:none;cursor:pointer;font-family:inherit;color:var(--text);transition:all .15s}
+    .filter-select:focus,.filter-select:hover{border-color:var(--border-strong)}
+
+    /* Starting balance */
+    .starting-bal-wrap{display:flex;align-items:center;gap:6px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:5px 12px;transition:all .15s}
+    .starting-bal-label{font-size:.8125rem;font-weight:500;color:var(--text-2);white-space:nowrap;display:inline-flex;align-items:center;gap:5px}
+    .starting-bal-input{width:110px;padding:3px 6px;font-size:.9rem;font-weight:600;border:none;text-align:right;font-family:inherit;color:var(--text);background:transparent;font-variant-numeric:tabular-nums}
+    .starting-bal-input:focus{outline:none;color:var(--text)}
+    .starting-bal-wrap.linked{border-color:var(--confirm);background:linear-gradient(to right,#f0fdf4 0%,var(--surface) 60%)}
+    .starting-bal-wrap.manual{border-color:var(--warn);background:linear-gradient(to right,var(--warn-soft) 0%,var(--surface) 60%)}
+    .starting-bal-status{display:inline-flex;align-items:center;gap:3px;font-size:.62rem;font-weight:700;padding:2px 6px;border-radius:4px;text-transform:uppercase;letter-spacing:.4px;margin-left:4px}
+    .starting-bal-status.linked{color:#047857;background:#d1fae5}
+    .starting-bal-status.manual{color:var(--warn);background:var(--warn-soft)}
+    .btn-link-prev{background:var(--neg);color:#fff;font-size:.8125rem;font-weight:600;padding:7px 12px;border-radius:var(--radius-sm);border:none;cursor:pointer;transition:all .12s;white-space:nowrap;display:inline-flex;align-items:center;gap:5px;font-family:inherit;line-height:1;box-shadow:0 1px 2px rgba(220,38,38,.2)}
+    .btn-link-prev:hover{background:#b91c1c;box-shadow:0 2px 6px rgba(220,38,38,.3)}
+    .btn-link-prev:active{transform:translateY(1px)}
+
+    /* Gear */
+    .gear-menu-wrap{position:relative}
+    .gear-dropdown{position:absolute;right:0;top:calc(100% + 6px);background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow-lg);min-width:220px;z-index:30;overflow:hidden;padding:4px}
+    .gear-item{display:flex;align-items:center;gap:10px;padding:9px 12px;font-size:.875rem;color:var(--text);cursor:pointer;border:none;background:none;width:100%;text-align:left;transition:background .1s;border-radius:var(--radius-sm);font-family:inherit}
+    .gear-item:hover{background:var(--surface-2)}
+    .gear-item.danger{color:var(--neg)}.gear-item.danger:hover{background:var(--neg-soft)}
+    .gear-separator{height:1px;background:var(--border);margin:4px 6px}
+    .gear-item-toggle{display:flex;align-items:center;justify-content:space-between;width:100%}
+    .gear-toggle-mini{position:relative;width:32px;height:18px;background:var(--border-strong);border-radius:9px;flex-shrink:0;margin-left:auto;transition:background .2s}
+    .gear-toggle-mini.on{background:var(--accent)}
+    .gear-toggle-mini::after{content:'';position:absolute;top:2px;left:2px;width:14px;height:14px;background:#fff;border-radius:50%;transition:left .2s;box-shadow:0 1px 2px rgba(0,0,0,.2)}
+    .gear-toggle-mini.on::after{left:16px}
+
+    /* Filter chips */
+    .chips-row{display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap}
+    .chip{padding:6px 12px;font-size:.8125rem;font-weight:600;border-radius:18px;border:1px solid var(--border);background:var(--surface);color:var(--text-2);cursor:pointer;white-space:nowrap;transition:all .15s;display:inline-flex;align-items:center;gap:6px;font-family:inherit;line-height:1.4}
+    .chip:hover{background:var(--surface-2);border-color:var(--border-strong)}
+    .chip.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 1px 3px rgba(37,99,235,.25)}
+    .chip-count{display:inline-block;background:rgba(255,255,255,.25);font-size:.7rem;padding:1px 6px;border-radius:8px;font-weight:700;min-width:20px;text-align:center;line-height:1.2}
+    .chip:not(.active) .chip-count{background:var(--surface-2);color:var(--text-2)}
+
+    /* Bulk action bar */
+    .bulk-bar{display:flex;align-items:center;gap:10px;padding:10px 16px;background:var(--accent-soft);border:1px solid var(--accent-soft-2);border-radius:var(--radius);margin-bottom:14px}
+    .bulk-count{font-size:.875rem;font-weight:600;color:var(--accent-2)}
+    .bulk-actions{display:flex;gap:6px;margin-left:auto}
+
+    /* Transaction Table */
+    .txn-table-wrap{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm)}
+    .txn-table{width:100%;border-collapse:collapse;min-width:880px}
+    .txn-table thead{background:var(--surface-2)}
+    .txn-table th{padding:11px 10px;font-size:.7rem;font-weight:600;color:var(--text-2);text-transform:uppercase;letter-spacing:.6px;text-align:left;border-bottom:1px solid var(--border)}
+    .txn-table th.r{text-align:right}.txn-table th.c{text-align:center}
+    .txn-table td{padding:9px 10px;border-bottom:1px solid #f1f5f9;vertical-align:top;font-size:.9rem;background:var(--surface)}
+    .txn-table tr:last-child td{border-bottom:none}
+    .txn-table tbody tr{transition:background .12s}
+    .txn-table tbody tr:hover td{background:#fafbfc}
+    .txn-table tbody tr.selected-row td{background:var(--accent-soft)}
+    .txn-table tbody tr.selected-row:hover td{background:var(--accent-soft-2)}
+
+    /* Row sign-driven styling */
+    .txn-table tbody tr.income-row td{background:var(--accent-soft)}
+    .txn-table tbody tr.income-row:hover td{background:var(--accent-soft-2)}
+    .txn-table tbody tr.income-row td:first-child{box-shadow:inset 4px 0 0 var(--accent)}
+    .txn-table tbody tr.expense-row td:first-child{box-shadow:inset 4px 0 0 var(--neg)}
+    /* Balance warning gradient: white (left) → orange/red (right) across the row */
+    .txn-table tbody tr.balwarn-orange{background:linear-gradient(to right,#ffffff 0%,#ffffff 35%,#fed7aa 100%)}
+    .txn-table tbody tr.balwarn-red{background:linear-gradient(to right,#ffffff 0%,#ffffff 30%,#fecaca 100%)}
+    .txn-table tbody tr.balwarn-orange td,.txn-table tbody tr.balwarn-red td{background:transparent!important}
+    .txn-table tbody tr.balwarn-orange:hover td,.txn-table tbody tr.balwarn-red:hover td{background:rgba(255,255,255,.15)!important}
+    .txn-table tbody tr.balwarn-orange td:first-child{box-shadow:inset 4px 0 0 #ea580c}
+    .txn-table tbody tr.balwarn-red td:first-child{box-shadow:inset 4px 0 0 var(--neg)}
+    .txn-table tbody tr.zero-row td:first-child{box-shadow:inset 4px 0 0 var(--text-3)}
+    .txn-table tbody tr.confirmed{opacity:.7}
+    .txn-table tbody tr.confirmed .txn-desc-text{text-decoration:line-through;text-decoration-color:rgba(100,116,139,.5)}
+
+    /* Select checkbox */
+    .sel-cb{width:16px;height:16px;accent-color:var(--accent);cursor:pointer;margin:0}
+    .sel-cb-th{width:16px;height:16px;accent-color:var(--accent);cursor:pointer}
+
+    /* Confirm checkbox */
+    .confirm-check{width:24px;height:24px;border:2px solid var(--border-strong);border-radius:6px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .15s;background:var(--surface);margin:0 auto}
+    .confirm-check:hover{border-color:var(--confirm);background:#f0fdf4;transform:scale(1.05)}
+    .confirm-check.checked{background:var(--confirm);border-color:var(--confirm);color:#fff}
+
+    /* Editable */
+    .editable{cursor:text;padding:2px 5px;border-radius:4px;transition:background .1s;display:inline-block}
+    .editable:hover{background:var(--accent-soft)}
+    .inline-input{padding:3px 6px;font-size:inherit;font-family:inherit;border:1px solid var(--accent);border-radius:4px;outline:none;box-shadow:0 0 0 2px var(--accent-soft);background:#fff}
+
+    /* Description cell */
+    .desc-cell{display:flex;flex-direction:column;gap:1px}
+    .desc-note-preview{font-size:.78rem;color:var(--text-3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:300px;font-style:italic}
+
+    /* Category badge */
+    .cat-badge{display:inline-block;padding:3px 9px;border-radius:10px;font-size:.72rem;font-weight:600;color:#fff;white-space:nowrap;letter-spacing:.1px}
+
+    /* Amount column - sign-driven colors */
+    .amt{font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+    .amt-pos{color:var(--text)}
+    .amt-neg{color:var(--neg)}
+    .amt-zero{color:var(--text-3)}
+    .amt-balance{font-weight:600;font-variant-numeric:tabular-nums}
+    .amt-strikethrough{text-decoration:line-through;color:var(--text-3);font-size:.78rem;margin-right:6px;font-weight:500}
+    .company-text{color:var(--text-2);font-size:.85rem}
+    .amt-arrow{font-size:.7rem;font-weight:900;margin-right:2px;opacity:.85}
+
+    /* Day-of-week */
+    .dow-cell{font-size:.7rem;color:var(--text-3);font-weight:500;margin-top:1px}
+
+    /* Recurring marker */
+    .recurring-mark{display:inline-block;font-size:.78rem;color:var(--accent);margin-left:6px;font-weight:700;opacity:.7}
+
+    /* Hide confirmed strip */
+    .hidden-strip{padding:9px 14px;background:var(--surface);border:1px dashed var(--border);border-radius:var(--radius);font-size:.8125rem;color:var(--text-2);text-align:center;cursor:pointer;margin:8px 0;transition:all .15s}
+    .hidden-strip:hover{background:var(--accent-soft);border-color:var(--accent-soft-2);color:var(--accent-2)}
+
+    /* Row actions */
+    .row-actions{display:flex;gap:1px;justify-content:flex-end;opacity:0;transition:opacity .12s}
+    tr:hover .row-actions{opacity:1}
+    .row-action{padding:4px;border:none;background:none;color:var(--text-3);cursor:pointer;border-radius:4px;display:flex;align-items:center;transition:all .12s}
+    .row-action:hover{background:var(--surface-2);color:var(--text-2)}
+    .row-action.del:hover{color:var(--neg);background:var(--neg-soft)}
+    .row-action:disabled{opacity:.25;cursor:default;pointer-events:none}
+
+    /* Confirm Popover */
+    .confirm-popover{position:fixed;z-index:60;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);padding:18px;width:280px}
+    .confirm-popover-desc{font-size:.8125rem;color:var(--text-2);margin-bottom:4px;text-align:center}
+    .confirm-popover-amount{font-size:1.25rem;font-weight:700;color:var(--text);margin-bottom:14px;text-align:center;font-variant-numeric:tabular-nums;letter-spacing:-.2px}
+    .confirm-popover-question{font-size:.875rem;color:var(--text-2);margin-bottom:14px;text-align:center;font-weight:500}
+    .confirm-popover-btns{display:flex;gap:8px}.confirm-popover-btns .btn{flex:1;justify-content:center}
+    .confirm-edit-input{width:100%;padding:9px 12px;font-size:1rem;border:1px solid var(--border);border-radius:var(--radius-sm);text-align:right;font-family:inherit;margin-bottom:12px;font-weight:600;font-variant-numeric:tabular-nums}
+    .confirm-edit-input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+    .overlay{position:fixed;inset:0;z-index:55}
+
+    /* Modal */
+    .modal-backdrop{position:fixed;inset:0;background:rgba(15,23,42,.5);display:flex;align-items:center;justify-content:center;z-index:50;padding:20px;backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
+    .modal{background:var(--surface);border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);max-width:640px;width:100%;max-height:90vh;overflow:auto;animation:modalIn .18s ease-out}
+    @keyframes modalIn{from{opacity:0;transform:translateY(8px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+    .modal-header{display:flex;align-items:center;justify-content:space-between;padding:18px 22px;border-bottom:1px solid var(--border)}
+    .modal-title{font-size:1.05rem;font-weight:700;color:var(--text);letter-spacing:-.2px}
+    .modal-close{padding:6px;border:none;background:none;color:var(--text-3);cursor:pointer;border-radius:6px;display:flex;transition:all .12s}
+    .modal-close:hover{background:var(--surface-2);color:var(--text-2)}
+    .modal-body{padding:22px}.modal-footer{display:flex;justify-content:flex-end;gap:8px;padding:14px 22px;border-top:1px solid var(--border);background:#fafbfc;border-radius:0 0 var(--radius-lg) var(--radius-lg)}
+    .modal-footer-spread{justify-content:space-between}
+    .form-row{display:flex;gap:12px;margin-bottom:14px}
+    .form-group{margin-bottom:14px;flex:1}
+    .form-label{display:block;font-size:.72rem;font-weight:600;color:var(--text-2);margin-bottom:5px;text-transform:uppercase;letter-spacing:.4px}
+    .form-input,.form-select,.form-textarea{width:100%;padding:9px 12px;font-size:.9rem;border:1px solid var(--border);border-radius:var(--radius-sm);font-family:inherit;background:var(--surface);color:var(--text);transition:all .12s}
+    .form-input:focus,.form-select:focus,.form-textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+    .form-textarea{resize:vertical;min-height:60px}
+
+    /* Sign toggle in modal */
+    .sign-toggle{display:flex;gap:8px;margin-bottom:8px}
+    .sign-btn{flex:1;padding:11px;font-size:.85rem;font-weight:700;border:2px solid var(--border);border-radius:var(--radius);background:var(--surface);color:var(--text-2);cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px;transition:all .15s;font-family:inherit;letter-spacing:.2px}
+    .sign-btn:hover{background:var(--surface-2);border-color:var(--border-strong)}
+    .sign-btn.active.expense{background:var(--neg-soft);border-color:var(--neg);color:var(--neg);box-shadow:0 1px 3px rgba(220,38,38,.15)}
+    .sign-btn.active.income{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-2);box-shadow:0 1px 3px rgba(37,99,235,.15)}
+    .amt-input-wrap{position:relative}
+    .amt-input-prefix{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--text-2);font-size:.95rem;font-weight:600;pointer-events:none}
+    .amt-input-wrap .form-input{padding-left:24px;font-weight:600;font-variant-numeric:tabular-nums}
+
+    /* Recurring panel */
+    .recur-panel{padding:14px;background:var(--surface-2);border-radius:var(--radius);border:1px solid var(--border);margin-top:8px}
+    .recur-default-note{font-size:.85rem;color:var(--text-2);padding:4px 0 2px;line-height:1.5}
+    .recur-default-note strong{color:var(--text);font-weight:700}
+    .recur-adv-toggle{margin-top:10px;background:none;border:none;color:var(--accent);font-size:.8rem;font-weight:600;cursor:pointer;padding:4px 0;font-family:inherit}
+    .recur-adv-toggle:hover{text-decoration:underline}
+    .recur-toggle{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+    .recur-toggle label{font-size:.875rem;font-weight:600;color:var(--text);flex:1;cursor:pointer;user-select:none}
+    .recur-switch{position:relative;width:44px;height:24px;background:var(--border-strong);border-radius:12px;cursor:pointer;transition:background .2s;flex-shrink:0}
+    .recur-switch.on{background:var(--accent)}
+    .recur-switch::after{content:'';position:absolute;top:2px;left:2px;width:20px;height:20px;background:#fff;border-radius:50%;transition:left .2s;box-shadow:0 1px 3px rgba(0,0,0,.2)}
+    .recur-switch.on::after{left:22px}
+    .recur-warn{font-size:.75rem;color:var(--warn);margin-top:10px;background:var(--warn-soft);padding:8px 10px;border-radius:var(--radius-sm);border:1px solid #fcd34d;line-height:1.4}
+
+    /* Series action choice */
+    .choice-btn{padding:14px 16px;text-align:left;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);cursor:pointer;margin-bottom:8px;width:100%;display:block;transition:all .15s;font-family:inherit}
+    .choice-btn:hover{background:var(--surface-2);border-color:var(--accent);box-shadow:var(--shadow)}
+    .choice-btn-title{font-size:.95rem;font-weight:600;color:var(--text);letter-spacing:-.1px}
+    .choice-btn-sub{font-size:.78rem;color:var(--text-2);margin-top:3px}
+
+    /* Pull */
+    .pull-header-info{font-size:.85rem;color:var(--text-2);margin-bottom:12px;padding:10px 14px;background:var(--surface-2);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:space-between}
+    .pull-count{font-weight:600;color:var(--accent)}
+    .pull-list{max-height:380px;overflow-y:auto;border:1px solid var(--border);border-radius:var(--radius)}
+    .pull-item{display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid #f1f5f9;transition:background .1s;cursor:pointer}
+    .pull-item:last-child{border-bottom:none}.pull-item:hover{background:var(--surface-2)}
+    .pull-cb{width:18px;height:18px;cursor:pointer;accent-color:var(--accent);flex-shrink:0}
+    .pull-item-day{color:var(--text-3);width:28px;text-align:center;font-weight:500;flex-shrink:0;font-size:.85rem}
+    .pull-item-desc{flex:1;color:var(--text);font-size:.875rem}
+    .pull-item-cat{flex-shrink:0}
+    .pull-item-amt{font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap;font-size:.875rem;flex-shrink:0;min-width:80px;text-align:right}
+    .pull-controls{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+    .pull-filter{padding:7px 28px 7px 12px;font-size:.8125rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") right 8px center no-repeat;appearance:none;cursor:pointer;font-family:inherit}
+
+    /* Category mgmt */
+    .settings-tabs{display:flex;gap:2px;padding:0 16px;border-bottom:1px solid var(--border);background:var(--surface)}
+    .settings-tab{padding:10px 14px;font-size:.82rem;font-weight:600;border:none;background:none;color:var(--text-3);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;font-family:inherit}
+    .settings-tab:hover{color:var(--text-2)}
+    .settings-tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+    .cat-item{display:flex;align-items:center;gap:10px;padding:10px;border-bottom:1px solid #f1f5f9}.cat-item:last-child{border-bottom:none}
+    .cat-color-dot{width:18px;height:18px;border-radius:5px;flex-shrink:0;cursor:pointer;box-shadow:inset 0 0 0 1px rgba(0,0,0,.1)}
+    .cat-name{flex:1;font-size:.875rem;color:var(--text);font-weight:500}.cat-count{font-size:.8125rem;color:var(--text-3);margin-right:8px;font-variant-numeric:tabular-nums}
+
+    .empty-state{text-align:center;padding:56px 20px;color:var(--text-3);font-size:.95rem;background:var(--surface);border:1px dashed var(--border);border-radius:var(--radius-lg)}
+
+    /* Balance bar */
+    .balance-bar{display:flex;align-items:center;gap:12px;margin-top:14px;flex-wrap:wrap}
+    .ending-bal-wrap{display:flex;align-items:center;gap:12px;background:var(--surface);border:2px solid var(--border-strong);border-radius:var(--radius-lg);padding:12px 22px;box-shadow:var(--shadow)}
+    .ending-bal-label{font-weight:700;color:var(--text-2);white-space:nowrap;text-transform:uppercase;letter-spacing:.6px;font-size:.72rem}
+    .ending-bal-value{font-size:1.55rem;font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:-.5px}
+    .ending-bal-value.positive{color:var(--text)}.ending-bal-value.negative{color:var(--neg)}
+
+    /* Timestamps */
+    .timestamps-bar{display:flex;align-items:center;gap:18px;font-size:.72rem;color:var(--text-3)}
+    .ts-item{display:flex;align-items:center;gap:5px}
+    .backup-dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+    .backup-fresh{background:var(--confirm)}
+    .backup-stale{background:var(--warn)}
+    .backup-old{background:var(--neg);animation:pulse-dot 2s infinite}
+    @keyframes pulse-dot{0%,100%{opacity:1}50%{opacity:.4}}
+
+    /* Toast */
+    .toast{position:fixed;bottom:28px;right:28px;background:var(--text);color:#fff;padding:12px 20px;border-radius:var(--radius);font-size:.875rem;font-weight:500;z-index:100;box-shadow:var(--shadow-lg);animation:toastIn .25s ease-out,toastOut .25s 2.2s forwards}
+    @keyframes toastIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes toastOut{from{opacity:1}to{opacity:0}}
+
+    /* Print */
+    @media print{
+      *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;color-adjust:exact!important}
+      body{background:#fff!important;font-size:11px!important;padding:0!important;margin:0!important}
+      .header,.toolbar,.bulk-bar,.balance-bar,.timestamps-bar,.btn,.row-actions,.confirm-check,.sel-cb,.sel-cb-th,.editable:hover,.search-input,.filter-select,.starting-bal-wrap,.btn-link-prev,.gear-menu-wrap,.header-buttons,.chips-row,.hidden-strip,.starting-bal-status,.confirmed-strip,.month-today-btn,.month-caret,.month-picker-input{display:none!important}
+      .container{max-width:100%!important;padding:0!important;margin:0!important}
+      .print-header{display:flex!important;align-items:center;justify-content:space-between;padding:16px 0 12px;border-bottom:2px solid #1e293b;margin-bottom:12px}
+      .print-title{font-size:16px;font-weight:700;color:#1e293b}
+      .print-month{font-size:14px;font-weight:600;color:#475569}
+      .print-date{font-size:9px;color:#94a3b8}
+      .summary-bar{display:grid!important;grid-template-columns:1fr 2fr;gap:8px;margin-bottom:10px}
+      .stat-cards{display:grid!important;grid-template-columns:repeat(3,1fr);gap:8px}
+      .summary-card{border:1px solid #ccc!important;padding:8px 10px!important;min-width:0!important;box-shadow:none!important;border-radius:4px!important}
+      .hero-card{background:#0f172a!important;-webkit-print-color-adjust:exact;print-color-adjust:exact;padding:10px 12px!important;border-radius:6px!important}
+      .hero-balance{font-size:18px!important}.hero-label,.hero-sub,.hero-progress-label,.hero-progress-val{color:rgba(255,255,255,.7)!important}
+      .summary-label{font-size:8px!important}.summary-value{font-size:12px!important}
+      .txn-table-wrap{border:none!important;border-radius:0!important;overflow:visible!important;box-shadow:none!important}
+      .txn-table{min-width:0!important;font-size:10px!important}
+      .txn-table th{padding:6px 4px!important;font-size:8px!important;background:#f0f0f0!important;border-bottom:2px solid #333!important;position:static!important}
+      .txn-table td{padding:5px 4px!important;font-size:10px!important;border-bottom:1px solid #ddd!important}
+      .txn-table th.print-hide,.txn-table td.print-hide{display:none!important}
+      .txn-table tbody tr{page-break-inside:avoid}
+      .txn-table tbody tr.income-row td{background:#eff6ff!important}
+      .txn-table tbody tr.income-row td:first-child{box-shadow:inset 3px 0 0 #2563eb!important}
+      .txn-table tbody tr.expense-row td{background:#fff!important}
+      .txn-table tbody tr.expense-row td:first-child{box-shadow:inset 3px 0 0 #dc2626!important}
+      .txn-table tbody tr.balwarn-orange td{background:linear-gradient(to right,#fff 0%,#fff 35%,#fed7aa 100%)!important}
+      .txn-table tbody tr.balwarn-red td{background:linear-gradient(to right,#fff 0%,#fff 30%,#fecaca 100%)!important}
+      .cat-badge{font-size:8px!important;padding:1px 5px!important;print-color-adjust:exact}
+      .desc-note-preview{max-width:200px!important;font-size:8px!important}
+      .amt,.amt-balance{font-size:10px!important}
+      .print-ending{display:flex!important;justify-content:flex-end;padding:10px 0;border-top:2px solid #1e293b;margin-top:8px;font-size:13px;font-weight:700}
+      .print-ending .lbl{color:#475569;margin-right:12px}
+      @page{size:letter;margin:0.6in 0.5in}
+      .empty-state{display:none!important}
+    }
+    .print-header,.print-ending{display:none}
+  </style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+const MONTHS=['January','February','March','April','May','June','July','August','September','October','November','December'];
+const DOW=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+const SK='familyBudgetV1';
+const DEF_CATS=[
+  {name:'Income',color:'#059669'},{name:'Loan',color:'#9333EA'},{name:'Utilities',color:'#0891B2'},
+  {name:'Home',color:'#92400E'},{name:'Entertainment',color:'#7C3AED'},{name:'Insurance',color:'#475569'},
+  {name:'Memberships',color:'#DB2777'},{name:'Subscription',color:'#CA8A04'},{name:'Recreation',color:'#0D9488'},
+  {name:'Transfer',color:'#64748B'},{name:'Education',color:'#0E7490'},{name:'Medical',color:'#A21CAF'},
+  {name:'Personal',color:'#78350F'},{name:'Credit Card',color:'#9333EA'},{name:'Holiday',color:'#BE185D'},
+];
+const TYPES=['ACH','EFT','Debit','Credit','Check','Venmo','ATM','Other'];
+const FREQS=['Monthly','Bi-Weekly','Weekly','Annual','Quarterly','One-Time','Periodic'];
+const RECUR_OPTS=['Monthly','Bi-Weekly','Weekly','Annual','Quarterly'];
+
+// v5.5: settings normalization — fills defaults & migrates older data
+function normalizeSettings(){
+  if(!D.settings)D.settings={};
+  const s=D.settings;
+  if(s.hideConfirmed===undefined)s.hideConfirmed=false;
+  if(!Array.isArray(s.types)||!s.types.length)s.types=[...TYPES];
+  if(!Array.isArray(s.frequencies)||!s.frequencies.length)s.frequencies=[...FREQS];
+  if(typeof s.warnOrange!=='number'||isNaN(s.warnOrange))s.warnOrange=1000;
+  if(typeof s.warnRed!=='number'||isNaN(s.warnRed))s.warnRed=500;
+}
+
+function gid(){return 'i'+Date.now()+'_'+Math.random().toString(36).substr(2,8)}
+function esc(t){const d=document.createElement('div');d.textContent=t==null?'':String(t);return d.innerHTML}
+function fmt(n){if(n==null)return'—';const a=Math.abs(n),s=a.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});return n<0?'-$'+s:n>0?'+$'+s:'$'+s}
+function fmtBal(n){if(n==null)return'—';const a=Math.abs(n),s=a.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});return n<0?'-$'+s:'$'+s}
+function amtCls(n){return n>0?'amt-pos':n<0?'amt-neg':'amt-zero'}
+function eff(t){return(t.confirmed&&t.actual!==null&&t.actual!==undefined)?t.actual:t.projected}
+function catCol(n){const c=D.categories.find(c=>c.name===n);return c?c.color:'#94a3b8'}
+function pk(k){const[y,m]=k.split('.');return{year:+y,month:+m}}
+function ml(k){const{year,month}=pk(k);return MONTHS[month-1]+' '+year}
+function mk(y,m){return y+'.'+String(m).padStart(2,'0')}
+function pm(k){let{year,month}=pk(k);month--;if(month<1){month=12;year--}return mk(year,month)}
+function nm(k){let{year,month}=pk(k);month++;if(month>12){month=1;year++}return mk(year,month)}
+function daysInMonth(monthKey){const{year,month}=pk(monthKey);return new Date(year,month,0).getDate()}
+function dow(monthKey,day){const{year,month}=pk(monthKey);const d=new Date(year,month-1,Math.min(day,daysInMonth(monthKey)));return DOW[d.getDay()]}
+// v4: row type now driven purely by amount sign (not category keywords)
+function rowType(t){const v=eff(t);return v>0?'income-row':v<0?'expense-row':'zero-row'}
+function fmtTs(iso){if(!iso)return'Never';const d=new Date(iso);const now=new Date();const diff=now-d;const mins=Math.floor(diff/60000);if(mins<1)return'Just now';if(mins<60)return mins+'m ago';const hrs=Math.floor(mins/60);if(hrs<24)return hrs+'h ago';const days=Math.floor(hrs/24);if(days<7)return days+'d ago';return d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:d.getFullYear()!==now.getFullYear()?'numeric':undefined})}
+function backupClass(iso){if(!iso)return'backup-old';const diff=Date.now()-new Date(iso).getTime();if(diff<86400000)return'backup-fresh';if(diff<259200000)return'backup-stale';return'backup-old'}
+
+const SEED={'2026.01':{startingBalance:8497,transactions:[
+  {d:1,desc:'Mortgage',co:'Freedom Mortgage',cat:'Loan',type:'ACH',freq:'Monthly',proj:-3300,ord:0},
+  {d:1,desc:'True Light Chiropractic',co:'True Light',cat:'Memberships',type:'Debit',freq:'Monthly',proj:-200,ord:1},
+  {d:2,desc:'Home Internet Service',co:'AT&T',cat:'Utilities',type:'EFT',freq:'Monthly',proj:-85,ord:0},
+  {d:2,desc:'Gymnastics and Cheer Lessons',co:'All 4 Prosper Gymnastics | All Cheer Dance',cat:'Recreation',type:'Debit',freq:'Monthly',proj:-300,ord:1},
+  {d:2,desc:'Nebraska Furniture Mart',co:'Nebraska',cat:'Loan',type:'EFT',freq:'Monthly',proj:-125,ord:2},
+  {d:5,desc:'Homeowners Association',co:'Insight Association',cat:'Home',type:'EFT',freq:'Monthly',proj:-132,ord:0},
+  {d:6,desc:'Water and Sewer Utility',co:'City of Celina',cat:'Utilities',type:'Debit',freq:'Monthly',proj:-360,ord:0},
+  {d:6,desc:'Movie Club Membership',co:'Cinemark',cat:'Memberships',type:'Debit',freq:'Monthly',proj:-12,ord:1},
+  {d:8,desc:'Cellular Service and Devices',co:'AT&T',cat:'Utilities',type:'EFT',freq:'Monthly',proj:-250,ord:0},
+  {d:9,desc:'Primary Income (Micah)',co:'RPS Defense',cat:'Income',type:'EFT',freq:'Bi-Weekly',proj:4422,ord:0},
+  {d:10,desc:'Streaming Service',co:'Netflix',cat:'Entertainment',type:'Debit',freq:'Monthly',proj:-27,ord:0},
+  {d:11,desc:'Gas Utility Service',co:'Coserv',cat:'Utilities',type:'EFT',freq:'Monthly',proj:-111,ord:0},
+  {d:15,desc:'Life Insurance',co:'Primerica Life',cat:'Insurance',type:'EFT',freq:'Monthly',proj:-92,ord:0},
+  {d:16,desc:'Streaming Service',co:'Apple',cat:'Entertainment',type:'Debit',freq:'Monthly',proj:-40,ord:0},
+  {d:16,desc:'Boardroom Salon',co:'Boardroom',cat:'Memberships',type:'Debit',freq:'Monthly',proj:-45,ord:1},
+  {d:18,desc:'Software Subscription',co:'OpenAI ChatGPT',cat:'Subscription',type:'Debit',freq:'Monthly',proj:-21,ord:0},
+  {d:20,desc:'Streaming Service',co:'Hulu',cat:'Entertainment',type:'Debit',freq:'Monthly',proj:-42,ord:0},
+  {d:21,desc:'Software Subscription',co:'Claude Code via Apple',cat:'Subscription',type:'Debit',freq:'Monthly',proj:-21,ord:0},
+  {d:22,desc:'Vehicle Loan (Hyundai)',co:'Hyundai',cat:'Loan',type:'EFT',freq:'Monthly',proj:-850,ord:0},
+  {d:23,desc:'Primary Income (Micah)',co:'RPS Defense',cat:'Income',type:'EFT',freq:'Bi-Weekly',proj:4422,ord:0},
+  {d:24,desc:'Insurance (VGLI)',co:'Veterans Group Life Insurance (VGLI)',cat:'Insurance',type:'EFT',freq:'Monthly',proj:-64,ord:0},
+  {d:24,desc:'Pool Maintenance and Supplies',co:"Leslie's AccuBlue Home",cat:'Home',type:'Debit',freq:'Annual',proj:-53,ord:1},
+  {d:27,desc:'Synchrony Rooms to Go',co:'TBD',cat:'Loan',type:'EFT',freq:'Monthly',proj:-200,ord:0},
+  {d:28,desc:'Home Alarm Service',co:'Alert 360',cat:'Home',type:'EFT',freq:'Monthly',proj:-27,ord:0},
+  {d:28,desc:'Student Loan',co:'Hinson-Hazlewood College Access Loan (CAL)',cat:'Loan',type:'EFT',freq:'Monthly',proj:0,ord:1,note:'Payment Not Due--Confirm Each Month'},
+  {d:31,desc:'Electric Utility Service',co:'Grayson Collin Electric Co',cat:'Utilities',type:'EFT',freq:'Monthly',proj:-280,ord:0},
+  {d:31,desc:'Disability Compensation',co:'Veterans Affairs',cat:'Income',type:'EFT',freq:'Monthly',proj:2862,ord:1},
+  {d:31,desc:'Retirement Compensation',co:'DFAS',cat:'Income',type:'EFT',freq:'Monthly',proj:1914,ord:2},
+  {d:31,desc:'Deposit (Checking → Savings)',co:'USAA',cat:'Transfer',type:'EFT',freq:'Monthly',proj:-5000,ord:3},
+].map((t,i)=>({id:gid(),day:t.d,description:t.desc,company:t.co,category:t.cat,type:t.type,frequency:t.freq,projected:t.proj,confirmed:false,actual:null,note:t.note||'',order:t.ord}))}};
+
+let D={categories:[],months:{},lastUpdated:null,lastBackup:null,settings:{hideConfirmed:false}};
+let cur='2026.01';
+let modal=null,editId=null,confirmPop=null,gearOpen=false,settingsTab='categories';
+let searchQ='',catFilter='All',filter='all';
+let selected=new Set();
+// v4 state
+let addState={sign:-1};
+let editState={sign:-1,_id:null};
+let recurState={enabled:false,advanced:false,freq:'Monthly',endType:'eoy',endDate:'',endCount:12,endMonths:6};
+let seriesActionId=null,seriesAction=null;
+
+function load(){
+  const s=localStorage.getItem(SK);
+  if(s){D=JSON.parse(s);if(!D.lastUpdated)D.lastUpdated=null;if(!D.lastBackup)D.lastBackup=null;
+    normalizeSettings();
+    Object.values(D.months).forEach(m=>{
+      if(m.isLinked===undefined)m.isLinked=false;
+      m.transactions.forEach((t,i)=>{
+        if(t.order===undefined)t.order=i;
+        if(t.seriesId===undefined)t.seriesId=null;
+      });
+    });
+  }else{D={categories:[...DEF_CATS],months:{},lastUpdated:new Date().toISOString(),lastBackup:null,settings:{hideConfirmed:false}};normalizeSettings();for(const[k,v]of Object.entries(SEED)){D.months[k]=v;D.months[k].isLinked=false}save()}
+  // v4.2: Default to today's calendar month, creating it as linked if missing.
+  // Fixes bug where adding a "Never" recurring transaction would create 5 years of
+  // future months and the app would default to the latest (e.g. April 2031).
+  const today=new Date();
+  const todayKey=mk(today.getFullYear(),today.getMonth()+1);
+  ensure(todayKey);
+  cur=todayKey;
+}
+function save(){D.lastUpdated=new Date().toISOString();localStorage.setItem(SK,JSON.stringify(D))}
+function ensure(k){if(!D.months[k])D.months[k]={startingBalance:0,transactions:[],isLinked:true}}
+function getM(){ensure(cur);return D.months[cur]}
+function allKeys(){return Object.keys(D.months).sort()}
+function sortTxns(txns){return[...txns].sort((a,b)=>a.day-b.day||(a.order||0)-(b.order||0))}
+function filtered(){
+  const m=getM();
+  return sortTxns(m.transactions.filter(t=>{
+    const v=eff(t);
+    if(catFilter!=='All'&&t.category!==catFilter)return false;
+    if(filter==='pending'&&t.confirmed)return false;
+    if(filter==='confirmed'&&!t.confirmed)return false;
+    if(filter==='income'&&v<=0)return false;
+    if(filter==='expenses'&&v>=0)return false;
+    if(searchQ){const q=searchQ.toLowerCase();return t.description.toLowerCase().includes(q)||(t.company||'').toLowerCase().includes(q)||t.category.toLowerCase().includes(q)||(t.note||'').toLowerCase().includes(q)}
+    return true;
+  }));
+}
+// Delta: the balance impact of a transaction (matches Excel logic)
+// Unconfirmed: full projected amount (hasn't hit the bank yet)
+// Confirmed at projected amount: 0 (already reflected in bank/starting balance)
+// Confirmed at different amount: just the variance (projected - actual)
+function delta(t){
+  // v5.6: A confirmed transaction has cleared the bank, so it's already reflected
+  // in the (live) starting balance — it contributes ZERO to the running balance,
+  // even when confirmed at a trued-up amount. Only pending items project forward.
+  return t.confirmed?0:t.projected;
+}
+function balances(txns,start){let b=start;return txns.map(t=>{b+=delta(t);return{...t,_bal:b}})}
+function endingBal(m,start){let b=start;m.transactions.forEach(t=>{b+=delta(t)});return b}
+
+// v4: Auto-link starting balance with recursion across linked months
+function getEffectiveStart(monthKey,seen){
+  seen=seen||new Set();
+  if(seen.has(monthKey))return 0;
+  seen.add(monthKey);
+  const m=D.months[monthKey];if(!m)return 0;
+  if(m.isLinked){
+    const prev=pm(monthKey);
+    if(D.months[prev]){
+      const prevStart=getEffectiveStart(prev,seen);
+      return endingBal(D.months[prev],prevStart);
+    }
+  }
+  return m.startingBalance;
+}
+function hasPrevMonth(){return D.months[pm(cur)]!==undefined}
+
+// v4: Link the current month (set isLinked = true). Editing flips back to manual.
+function relinkBalance(){
+  if(!hasPrevMonth()){alert('No previous month to link to.');return}
+  getM().isLinked=true;save();render();toast('Linked to '+ml(pm(cur)));
+}
+function summary(){
+  const m=getM();const start=getEffectiveStart(cur);
+  let inc=0,exp=0;
+  m.transactions.forEach(t=>{const v=eff(t);if(v>0)inc+=v;else exp+=v});
+  const ending=endingBal(m,start);
+  return{start,income:inc,expenses:exp,ending,confirmed:m.transactions.filter(t=>t.confirmed).length,total:m.transactions.length};
+}
+
+const I={
+  chevL:'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>',
+  chevR:'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>',
+  plus:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>',
+  check:'<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>',
+  edit:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>',
+  trash:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>',
+  copy:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>',
+  x:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>',
+  pull:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>',
+  list:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>',
+  gear:'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>',
+  download:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>',
+  upload:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>',
+  cal:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>',
+  up:'<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>',
+  down:'<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>',
+  print:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>',
+  caret:'<svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M7 10l5 5 5-5z"/></svg>',
+  target:'<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg>',
+  link:'<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>',
+  eye:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>',
+  eyeOff:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>',
+};
+
+function toast(m){const el=document.createElement('div');el.className='toast';el.textContent=m;document.body.appendChild(el);setTimeout(()=>el.remove(),2500)}
+function catOpts(sel){return D.categories.map(c=>`<option value="${esc(c.name)}"${sel===c.name?' selected':''}>${esc(c.name)}</option>`).join('')}
+function typeOpts(sel){const list=[...D.settings.types];if(sel&&!list.includes(sel))list.push(sel);return list.map(t=>`<option value="${esc(t)}"${sel===t?' selected':''}>${esc(t)}</option>`).join('')}
+function freqOpts(sel){const list=[...D.settings.frequencies];if(sel&&!list.includes(sel))list.push(sel);return list.map(f=>`<option value="${esc(f)}"${sel===f?' selected':''}>${esc(f)}</option>`).join('')}
+function recurFreqOpts(sel){return RECUR_OPTS.map(r=>`<option value="${r}"${sel===r?' selected':''}>${r}</option>`).join('')}
+function progressRing(c,t){const p=t===0?0:c/t,r=18,ci=2*Math.PI*r,o=ci*(1-p),col=p===1?'#10b981':p>=.5?'#2563eb':'#f59e0b';return`<svg width="48" height="48" viewBox="0 0 48 48"><circle cx="24" cy="24" r="${r}" fill="none" stroke="#e2e8f0" stroke-width="4"/><circle cx="24" cy="24" r="${r}" fill="none" stroke="${col}" stroke-width="4" stroke-linecap="round" stroke-dasharray="${ci}" stroke-dashoffset="${o}" transform="rotate(-90 24 24)" style="transition:stroke-dashoffset .4s"/><text x="24" y="24" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="700" fill="${col}">${Math.round(p*100)}%</text></svg>`}
+
+// --- Actions ---
+function setMonth(k){ensure(k);cur=k;confirmPop=null;searchQ='';catFilter='All';filter='all';selected.clear();render()}
+function goPrev(){setMonth(pm(cur))}
+function goNext(){setMonth(nm(cur))}
+// v4.2: Month picker helpers
+function openMonthPicker(){
+  const inp=document.getElementById('monthPickerInp');
+  if(!inp)return;
+  if(typeof inp.showPicker==='function'){
+    try{inp.showPicker();return}catch(e){}
+  }
+  inp.focus();inp.click();
+}
+function setMonthFromPicker(val){
+  if(!val)return;
+  const[y,m]=val.split('-');
+  if(!y||!m)return;
+  setMonth(y+'.'+m);
+}
+function jumpToToday(){
+  const today=new Date();
+  setMonth(mk(today.getFullYear(),today.getMonth()+1));
+}
+function setStartBal(v){const n=parseFloat(v);if(isNaN(n))return;const m=getM();m.startingBalance=n;m.isLinked=false;save();render()}
+function toggleHideConfirmed(){D.settings.hideConfirmed=!D.settings.hideConfirmed;save();render()}
+function generateRecurringDates(startMonthKey,startDay,opts){
+  const out=[];
+  const freq=opts.freq;
+  const HARD_MAX=opts.endType==='never'?60:200;
+  let maxOccur=HARD_MAX;
+  if(opts.endType==='count')maxOccur=Math.min(opts.endCount,HARD_MAX);
+  const endDateStr=opts.endType==='date'?opts.endDate:null;
+  // 'eoy' (default): run through December of the start year.
+  // 'months': run for N months from the start (inclusive).
+  let endMonthKey=null;
+  if(opts.endType==='eoy'){const{year}=pk(startMonthKey);endMonthKey=mk(year,12)}
+  if(opts.endType==='months'){
+    const n=Math.max(1,Math.min(parseInt(opts.endMonths)||1,HARD_MAX));
+    let{year,month}=pk(startMonthKey);month+=n-1;while(month>12){month-=12;year++}endMonthKey=mk(year,month);
+  }
+  if(freq==='Monthly'||freq==='Quarterly'||freq==='Annual'){
+    const stepMonths=freq==='Monthly'?1:freq==='Quarterly'?3:12;
+    let mk2=startMonthKey;
+    for(let i=0;i<maxOccur;i++){
+      const dim=daysInMonth(mk2);const day=Math.min(startDay,dim);
+      if(endDateStr){
+        const{year,month}=pk(mk2);const dateStr=year+'-'+String(month).padStart(2,'0')+'-'+String(day).padStart(2,'0');
+        if(dateStr>endDateStr)break;
+      }
+      if(endMonthKey&&mk2>endMonthKey)break;
+      out.push({monthKey:mk2,day});
+      let{year,month}=pk(mk2);month+=stepMonths;while(month>12){month-=12;year++}mk2=mk(year,month);
+    }
+  } else if(freq==='Weekly'||freq==='Bi-Weekly'){
+    const stepDays=freq==='Weekly'?7:14;
+    const{year,month}=pk(startMonthKey);
+    let cursor=new Date(year,month-1,Math.min(startDay,daysInMonth(startMonthKey)));
+    for(let i=0;i<maxOccur;i++){
+      if(endDateStr){const cd=cursor.toISOString().split('T')[0];if(cd>endDateStr)break}
+      const ck=mk(cursor.getFullYear(),cursor.getMonth()+1);
+      if(endMonthKey&&ck>endMonthKey)break;
+      out.push({monthKey:ck,day:cursor.getDate()});
+      cursor=new Date(cursor.getTime()+stepDays*86400000);
+    }
+  }
+  return out;
+}
+
+function addTxn(d,recurOpts){
+  const placeNew=(month,data,seriesId)=>{
+    const same=month.transactions.filter(t=>t.day===data.day);
+    const mx=same.length?Math.max(...same.map(t=>t.order||0)):(-1);
+    month.transactions.push({id:gid(),...data,order:mx+1,seriesId,confirmed:false,actual:null});
+  };
+  if(!recurOpts||!recurOpts.enabled){
+    placeNew(getM(),d,null);
+    save();modal=null;render();toast('Transaction added');
+    return;
+  }
+  const seriesId='ser_'+Date.now()+'_'+Math.random().toString(36).substr(2,6);
+  const instances=generateRecurringDates(cur,d.day,recurOpts);
+  if(instances.length===0){alert('No occurrences generated. Check end date.');return}
+  instances.forEach(inst=>{
+    ensure(inst.monthKey);
+    if(inst.monthKey!==cur&&D.months[inst.monthKey].transactions.length===0&&D.months[inst.monthKey].isLinked!==false){
+      D.months[inst.monthKey].isLinked=true;
+    }
+    placeNew(D.months[inst.monthKey],{...d,day:inst.day},seriesId);
+  });
+  save();modal=null;render();toast('Added '+instances.length+' occurrences');
+}
+
+function deleteSeriesFromHere(id){
+  const t=getM().transactions.find(t=>t.id===id);if(!t||!t.seriesId)return;
+  const sid=t.seriesId;const startKey=cur;const startDay=t.day;let count=0;
+  Object.keys(D.months).forEach(mkk=>{
+    if(mkk<startKey)return;
+    const month=D.months[mkk];
+    month.transactions=month.transactions.filter(x=>{
+      if(x.seriesId!==sid)return true;
+      if(mkk===startKey&&x.day<startDay)return true;
+      count++;return false;
+    });
+  });
+  save();modal=null;editId=null;render();toast('Deleted '+count+' occurrences');
+}
+function deleteSeriesAll(seriesId){
+  let count=0;
+  Object.values(D.months).forEach(m=>{
+    const before=m.transactions.length;
+    m.transactions=m.transactions.filter(t=>t.seriesId!==seriesId);
+    count+=before-m.transactions.length;
+  });
+  save();modal=null;editId=null;render();toast('Deleted '+count+' occurrences');
+}
+function updateSeriesFromHere(id,updates){
+  const t=getM().transactions.find(t=>t.id===id);if(!t||!t.seriesId)return;
+  const sid=t.seriesId;const startKey=cur;const startDay=t.day;let count=0;
+  Object.keys(D.months).forEach(mkk=>{
+    if(mkk<startKey)return;
+    D.months[mkk].transactions.forEach(x=>{
+      if(x.seriesId!==sid)return;
+      if(mkk===startKey&&x.day<startDay)return;
+      Object.entries(updates).forEach(kv=>{const k=kv[0],v=kv[1];if(k!=='confirmed'&&k!=='actual'&&k!=='id')x[k]=v});
+      count++;
+    });
+  });
+  save();modal=null;editId=null;render();toast('Updated '+count+' occurrences');
+}
+
+function updateTxn(id,u){const t=getM().transactions.find(t=>t.id===id);if(t)Object.assign(t,u);save();render()}
+function deleteTxn(id){getM().transactions=getM().transactions.filter(t=>t.id!==id);save();editId=null;modal=null;confirmPop=null;selected.delete(id);render();toast('Transaction deleted')}
+function cloneTxn(id){const m=getM();const t=m.transactions.find(t=>t.id===id);if(!t)return;const sameDay=m.transactions.filter(x=>x.day===t.day);const maxOrd=Math.max(...sameDay.map(x=>x.order||0));const c={...t,id:gid(),confirmed:false,actual:null,seriesId:null,order:maxOrd+1};m.transactions.push(c);save();openEdit(c.id);toast('Cloned — adjust the day if needed')}
+function confirmTxn(id,amt){const t=getM().transactions.find(t=>t.id===id);if(!t)return;t.confirmed=true;t.actual=(amt!==t.projected)?amt:null;save();confirmPop=null;render()}
+// v5.6: partial payment — split into a cleared portion (confirmed, zero delta)
+// and the remainder (still pending, keeps deducting from the running balance).
+function partialTxn(id,amtPaid){
+  const m=getM();const t=m.transactions.find(x=>x.id===id);if(!t)return;
+  const p=Math.abs(parseFloat(amtPaid));
+  if(isNaN(p)||p<=0){alert('Enter a positive amount.');return}
+  const full=Math.abs(t.projected);
+  if(p>=full){alert('That covers the full amount — use Confirm or Edit Amount instead.');return}
+  const sign=t.projected<0?-1:1;
+  const cleared={...t,id:gid(),projected:sign*p,confirmed:true,actual:null,seriesId:null,description:t.description+' (partial)'};
+  t.projected=sign*(full-p);t.confirmed=false;t.actual=null;
+  m.transactions.push(cleared);
+  save();confirmPop=null;render();toast('Partial recorded — '+fmt(t.projected)+' remaining');
+}
+function confPartialSave(){const inp=document.getElementById('confPartialInp');const v=parseFloat(inp.value);if(isNaN(v))return;partialTxn(confirmPop.id,v)}
+function unconfirmTxn(id){const t=getM().transactions.find(t=>t.id===id);if(!t)return;t.confirmed=false;t.actual=null;save();render()}
+
+function moveUp(id){const m=getM();const t=m.transactions.find(x=>x.id===id);if(!t)return;const sorted=sortTxns(m.transactions);const idx=sorted.findIndex(x=>x.id===id);if(idx<=0)return;const prev=sorted[idx-1];if(prev.day!==t.day)return;const tmpO=t.order;t.order=prev.order;prev.order=tmpO;save();render()}
+function moveDown(id){const m=getM();const t=m.transactions.find(x=>x.id===id);if(!t)return;const sorted=sortTxns(m.transactions);const idx=sorted.findIndex(x=>x.id===id);if(idx>=sorted.length-1)return;const next=sorted[idx+1];if(next.day!==t.day)return;const tmpO=t.order;t.order=next.order;next.order=tmpO;save();render()}
+function canMoveUp(id,sorted){const idx=sorted.findIndex(x=>x.id===id);return idx>0&&sorted[idx-1].day===sorted[idx].day}
+function canMoveDown(id,sorted){const idx=sorted.findIndex(x=>x.id===id);return idx<sorted.length-1&&sorted[idx+1].day===sorted[idx].day}
+
+// Bulk actions
+function toggleSelect(id){if(selected.has(id))selected.delete(id);else selected.add(id);render()}
+function toggleSelectAll(){const txns=filtered();if(selected.size===txns.length)selected.clear();else txns.forEach(t=>selected.add(t.id));render()}
+function bulkDelete(){const n=selected.size;if(!confirm(`Delete ${n} selected transaction(s)?`))return;const m=getM();m.transactions=m.transactions.filter(t=>!selected.has(t.id));selected.clear();save();render();toast(`Deleted ${n} transaction(s)`)}
+function bulkCopy(){const m=getM();let count=0;selected.forEach(id=>{const t=m.transactions.find(t=>t.id===id);if(t){const sameDay=m.transactions.filter(x=>x.day===t.day);const maxOrd=Math.max(...sameDay.map(x=>x.order||0));m.transactions.push({...t,id:gid(),confirmed:false,actual:null,seriesId:null,order:maxOrd+1+count});count++}});selected.clear();save();render();toast(`Copied ${count} transaction(s)`)}
+
+function pullTxns(src,ids){const s=D.months[src];if(!s)return;const m=getM();ids.forEach(id=>{const t=s.transactions.find(t=>t.id===id);if(t){const sameDay=m.transactions.filter(x=>x.day===t.day);const maxOrd=sameDay.length?Math.max(...sameDay.map(x=>x.order||0)):(-1);m.transactions.push({...t,id:gid(),confirmed:false,actual:null,seriesId:null,order:maxOrd+1})}});save();modal=null;render();toast(`Pulled ${ids.length} transaction(s)`)}
+function createNewMonth(){const next=nm(cur);if(D.months[next]){if(!confirm(`${ml(next)} already exists. Switch to it?`))return;setMonth(next);return}D.months[next]={startingBalance:0,transactions:[],isLinked:true};save();cur=next;selected.clear();modal='pull-init';render();toast(`Created ${ml(next)}`)}
+function deleteMonth(){if(!confirm(`Delete ${ml(cur)} and all transactions?`))return;delete D.months[cur];const ks=allKeys();cur=ks.length?ks[ks.length-1]:mk(new Date().getFullYear(),new Date().getMonth()+1);ensure(cur);save();gearOpen=false;selected.clear();render();toast('Month deleted')}
+function exportData(){D.lastBackup=new Date().toISOString();save();const j=JSON.stringify(D,null,2);const b=new Blob([j],{type:'application/json'});const u=URL.createObjectURL(b);const a=document.createElement('a');const d=new Date();const ds=d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');a.href=u;a.download='family-budget-'+ds+'.json';a.click();URL.revokeObjectURL(u);gearOpen=false;render();toast('Data exported')}
+function importData(f){const r=new FileReader();r.onload=e=>{try{const d=JSON.parse(e.target.result);if(!d.categories||!d.months){alert('Invalid file.');return}if(!confirm('Replace all current data?'))return;D=d;normalizeSettings();Object.values(D.months).forEach(m=>{if(m.isLinked===undefined)m.isLinked=false;m.transactions.forEach((t,i)=>{if(t.order===undefined)t.order=i;if(t.seriesId===undefined)t.seriesId=null})});save();const ks=allKeys();cur=ks.length?ks[ks.length-1]:'2026.01';ensure(cur);selected.clear();render();toast('Data imported')}catch(e){alert('Error: '+e.message)}};r.readAsText(f)}
+
+function printReport(){gearOpen=false;render();setTimeout(()=>window.print(),100)}
+
+function showConfirmPop(id,el){const t=getM().transactions.find(t=>t.id===id);if(!t)return;if(t.confirmed){unconfirmTxn(id);return}const r=el.getBoundingClientRect();confirmPop={id,left:Math.min(r.left,window.innerWidth-280),top:Math.min(r.bottom+6,window.innerHeight-200),editing:false};render()}
+function confSave(){const inp=document.getElementById('confEditInp');const v=parseFloat(inp.value);if(isNaN(v))return;confirmTxn(confirmPop.id,v)}
+
+let clickTimer=null;
+function inlineEdit(id,field,el){if(clickTimer)clearTimeout(clickTimer);clickTimer=setTimeout(()=>{const t=getM().transactions.find(t=>t.id===id);if(!t)return;const val=field==='projected'?t[field]:field==='day'?t.day:(t[field]||'');const type=field==='projected'||field==='day'?'number':'text';const extra=field==='day'?'min="1" max="31" style="width:44px;text-align:center"':field==='projected'?'step="0.01" style="width:100px;text-align:right"':'style="width:100%"';el.innerHTML=`<input class="inline-input" type="${type}" value="${esc(String(val))}" ${extra} onblur="finishInline(this,'${id}','${field}')" onkeydown="if(event.key==='Enter')this.blur();if(event.key==='Escape')render()">`;const inp=el.querySelector('input');if(inp){inp.focus();inp.select()}},250)}
+function openEdit(id){if(clickTimer){clearTimeout(clickTimer);clickTimer=null}editId=id;editState={sign:-1,_id:null};modal='edit';render()}
+function openAdd(){addState={sign:-1};recurState={enabled:false,advanced:false,freq:'Monthly',endType:'eoy',endDate:'',endCount:12,endMonths:6};modal='add';render()}
+
+// v4.1: Preserve add-modal form state across renders when toggling sign or recurring
+function captureAddForm(){
+  const f={};
+  ['addDay','addDesc','addCo','addCat','addType','addFreq','addAmt','addNote'].forEach(id=>{const el=document.getElementById(id);if(el)f[id]=el.value});
+  return f;
+}
+function restoreAddForm(f){
+  if(!f)return;
+  Object.keys(f).forEach(id=>{const el=document.getElementById(id);if(el&&f[id]!==undefined)el.value=f[id]});
+}
+// v5.0: Sign toggles are DOM-driven — no re-render, no desync.
+// The visible .active button is the single source of truth, read at submit time.
+function setAddSign(s){
+  addState.sign=s;
+  const ex=document.getElementById('addSignExpense'),inc=document.getElementById('addSignIncome');
+  if(ex&&inc){ex.classList.toggle('active',s===-1);inc.classList.toggle('active',s===1)}
+}
+function toggleRecur(){const f=captureAddForm();recurState.enabled=!recurState.enabled;render();restoreAddForm(f)}
+function toggleRecurAdvanced(){const f=captureAddForm();recurState.advanced=!recurState.advanced;if(!recurState.advanced)recurState.endType='eoy';render();restoreAddForm(f)}
+function setRecurEndType(v){const f=captureAddForm();recurState.endType=v;render();restoreAddForm(f)}
+
+// Edit modal form preservation
+function captureEditForm(){
+  const f={};
+  ['eDay','eDesc','eCo','eCat','eType','eFreq','eAmt','eNote'].forEach(id=>{const el=document.getElementById(id);if(el)f[id]=el.value});
+  return f;
+}
+function restoreEditForm(f){
+  if(!f)return;
+  Object.keys(f).forEach(id=>{const el=document.getElementById(id);if(el&&f[id]!==undefined)el.value=f[id]});
+}
+function setEditSign(s){
+  editState.sign=s;
+  const ex=document.getElementById('editSignExpense'),inc=document.getElementById('editSignIncome');
+  if(ex&&inc){ex.classList.toggle('active',s===-1);inc.classList.toggle('active',s===1)}
+}
+// Read the sign straight from the DOM (what the user sees) — bulletproof.
+function readAddSign(){
+  const inc=document.getElementById('addSignIncome');
+  return inc&&inc.classList.contains('active')?1:-1;
+}
+function readEditSign(){
+  const inc=document.getElementById('editSignIncome');
+  return inc&&inc.classList.contains('active')?1:-1;
+}
+// When the Income category is chosen, default the sign to income (convenience).
+function onAddCatChange(v){if(v==='Income')setAddSign(1)}
+function onEditCatChange(v){if(v==='Income')setEditSign(1)}
+function finishInline(inp,id,field){let v=inp.value;if(field==='projected'||field==='day'){v=parseFloat(v);if(isNaN(v)){render();return}if(field==='day')v=Math.max(1,Math.min(31,Math.round(v)))}updateTxn(id,{[field]:v})}
+
+function addCat(){const n=document.getElementById('newCatN').value.trim();const c=document.getElementById('newCatC').value;if(!n)return;if(D.categories.some(x=>x.name.toLowerCase()===n.toLowerCase())){alert('Already exists.');return}D.categories.push({name:n,color:c});save();render()}
+function editCatName(old){const n=prompt('Rename:',old);if(!n||!n.trim()||n.trim()===old)return;const nm2=n.trim();if(D.categories.some(c=>c.name.toLowerCase()===nm2.toLowerCase()&&c.name!==old)){alert('Already exists.');return}D.categories=D.categories.map(c=>c.name===old?{...c,name:nm2}:c);Object.values(D.months).forEach(m=>m.transactions.forEach(t=>{if(t.category===old)t.category=nm2}));save();render()}
+function editCatColor(name){const c=D.categories.find(x=>x.name===name);if(!c)return;const col=prompt('Hex color (e.g. #059669):',c.color);if(!col)return;c.color=col;save();render()}
+function delCat(name){let cnt=0;Object.values(D.months).forEach(m=>{cnt+=m.transactions.filter(t=>t.category===name).length});if(cnt>0&&!confirm(`${cnt} transaction(s) use "${name}". Continue?`))return;D.categories=D.categories.filter(c=>c.name!==name);save();render()}
+
+// v5.5: customizable dropdown lists (Types & Frequencies)
+function countUse(field,val){let n=0;Object.values(D.months).forEach(m=>{n+=m.transactions.filter(t=>t[field]===val).length});return n}
+function addListItem(listKey,inputId){const n=document.getElementById(inputId).value.trim();if(!n)return;const list=D.settings[listKey];if(list.some(x=>x.toLowerCase()===n.toLowerCase())){alert('Already exists.');return}list.push(n);save();render()}
+function renameListItem(listKey,field,old){const n=prompt('Rename:',old);if(!n||!n.trim()||n.trim()===old)return;const nm2=n.trim();const list=D.settings[listKey];if(list.some(x=>x.toLowerCase()===nm2.toLowerCase()&&x!==old)){alert('Already exists.');return}D.settings[listKey]=list.map(x=>x===old?nm2:x);Object.values(D.months).forEach(m=>m.transactions.forEach(t=>{if(t[field]===old)t[field]=nm2}));save();render()}
+function delListItem(listKey,field,val){const list=D.settings[listKey];if(list.length<=1){alert('At least one option is required.');return}const cnt=countUse(field,val);if(cnt>0&&!confirm(cnt+' transaction(s) use "'+val+'". They keep it, but it leaves the dropdown. Continue?'))return;D.settings[listKey]=list.filter(x=>x!==val);save();render()}
+function setWarn(key,v){const n=parseFloat(v);if(isNaN(n)||n<0){render();return}D.settings[key]=n;save();render()}
+
+function submitAdd(){
+  const day=Math.max(1,Math.min(31,parseInt(document.getElementById('addDay').value)||1));
+  const desc=document.getElementById('addDesc').value.trim();
+  const co=document.getElementById('addCo').value.trim();
+  const cat=document.getElementById('addCat').value;
+  const type=document.getElementById('addType').value;
+  const freq=document.getElementById('addFreq').value;
+  const amtRaw=parseFloat(document.getElementById('addAmt').value);
+  const note=document.getElementById('addNote').value.trim();
+  if(!desc){alert('Description is required.');return}
+  if(isNaN(amtRaw)||amtRaw<0){alert('Amount is required (positive number).');return}
+  const amt=amtRaw*readAddSign();
+  if(recurState.enabled&&recurState.advanced&&recurState.endType==='date'&&!recurState.endDate){alert('End date required.');return}
+  addTxn({day,description:desc,company:co,category:cat,type,frequency:freq,projected:amt,note},recurState.enabled?{...recurState}:null);
+}
+function submitEdit(id,isRecurring){
+  const day=Math.max(1,Math.min(31,parseInt(document.getElementById('eDay').value)||1));
+  const desc=document.getElementById('eDesc').value.trim();
+  const co=document.getElementById('eCo').value.trim();
+  const cat=document.getElementById('eCat').value;
+  const type=document.getElementById('eType').value;
+  const freq=document.getElementById('eFreq').value;
+  const amtRaw=parseFloat(document.getElementById('eAmt').value);
+  const note=document.getElementById('eNote').value.trim();
+  if(!desc){alert('Description is required.');return}
+  if(isNaN(amtRaw)||amtRaw<0){alert('Amount is required (positive number).');return}
+  const amt=amtRaw*readEditSign();
+  const updates={day,description:desc,company:co,category:cat,type,frequency:freq,projected:amt,note};
+  if(isRecurring){seriesActionId=id;seriesAction={type:'edit',updates};modal='series-edit';render();return}
+  updateTxn(id,updates);
+  modal=null;editId=null;editState={sign:-1,_id:null};
+  toast('Transaction updated');
+}
+
+// --- Pull helpers ---
+function renderPull(){const src=document.getElementById('pullSrc')?.value;const listEl=document.getElementById('pullList');if(!src||!listEl||!D.months[src])return;const cf=document.getElementById('pullCatFilter')?.value||'All';const txns=sortTxns(D.months[src].transactions).filter(t=>cf==='All'||t.category===cf);listEl.innerHTML=txns.map(t=>`<div class="pull-item"><input type="checkbox" class="pull-cb" value="${t.id}" onclick="event.stopPropagation();updatePullInfo()"><span class="pull-item-day">${t.day}</span><span class="pull-item-desc">${esc(t.description)}</span><span class="pull-item-cat"><span class="cat-badge" style="background:${catCol(t.category)};font-size:.7rem">${esc(t.category)}</span></span><span class="pull-item-amt ${amtCls(t.projected)}">${fmt(t.projected)}</span></div>`).join('');listEl.querySelectorAll('.pull-item').forEach(item=>{const cb=item.querySelector('.pull-cb');item.onclick=e=>{if(e.target===cb)return;cb.checked=!cb.checked;updatePullInfo()}});updatePullInfo()}
+function updatePullInfo(){const cbs=document.querySelectorAll('.pull-cb:checked');const el=document.getElementById('pullInfo');if(!el)return;if(cbs.length===0){el.innerHTML='Select transactions below';return}let total=0;const src=document.getElementById('pullSrc')?.value;cbs.forEach(cb=>{if(src&&D.months[src]){const t=D.months[src].transactions.find(t=>t.id===cb.value);if(t)total+=t.projected}});el.innerHTML=`<span class="pull-count">${cbs.length} selected</span><span style="font-weight:600;color:${total>=0?'#059669':'#334155'}">${fmt(total)} net</span>`}
+function togglePullAll(){const cbs=document.querySelectorAll('.pull-cb');const all=Array.from(cbs).every(cb=>cb.checked);cbs.forEach(cb=>cb.checked=!all);updatePullInfo()}
+function submitPull(){const src=document.getElementById('pullSrc')?.value;if(!src)return;const ids=Array.from(document.querySelectorAll('.pull-cb:checked')).map(cb=>cb.value);if(!ids.length){alert('Select at least one transaction.');return}pullTxns(src,ids)}
+
+// --- Render ---
+function render(){
+  const m=getM();const txns=filtered();const s=summary();
+  const allSorted=sortTxns(m.transactions);const withBal=balances(allSorted,s.start);const balMap={};withBal.forEach(t=>{balMap[t.id]=t._bal});
+  const hasPrev=hasPrevMonth();
+  const isLinked=m.isLinked&&hasPrev;
+  const startManual=!m.isLinked&&hasPrev;
+  const hideConfirmed=D.settings.hideConfirmed;
+  let h='';
+
+  // Header
+  // v4.2: month picker value formatted YYYY-MM for HTML5 input
+  const monthPickerVal=cur.replace('.','-');
+  const today=new Date();const todayKey=mk(today.getFullYear(),today.getMonth()+1);
+  const onToday=cur===todayKey;
+  h+=`<div class="header"><div class="header-inner"><div class="header-left"><div class="header-title">Family Budget Tracker<span class="header-version">v5.6</span><span class="header-updated">Updated ${fmtTs(D.lastUpdated)}</span></div><div class="month-nav"><button class="month-nav-btn" onclick="goPrev()" title="Previous month">${I.chevL}</button><div class="month-label-wrap" onclick="openMonthPicker()" title="Jump to any month"><span class="month-label">${ml(cur)}</span><span class="month-caret">${I.caret}</span><input type="month" id="monthPickerInp" class="month-picker-input" value="${monthPickerVal}" onchange="setMonthFromPicker(this.value)"></div><button class="month-nav-btn" onclick="goNext()" title="Next month">${I.chevR}</button></div><button class="month-today-btn ${onToday?'on-today':''}" onclick="jumpToToday()" title="${onToday?'Currently on today’s month':'Jump to current month ('+ml(todayKey)+')'}">${I.target} Today</button></div><div class="header-buttons"><button class="btn btn-secondary btn-sm" onclick="modal='pull';render()">${I.pull} Pull</button><button class="btn btn-secondary btn-sm" onclick="modal='settings';settingsTab='categories';render()">${I.list} Settings</button><button class="btn btn-secondary btn-sm" onclick="createNewMonth()">${I.cal} New Month</button><button class="btn btn-primary" onclick="openAdd()">${I.plus} Add</button><div class="gear-menu-wrap"><button class="btn btn-ghost" onclick="gearOpen=!gearOpen;render()">${I.gear}</button>${gearOpen?`<div class="gear-dropdown"><button class="gear-item gear-item-toggle" onclick="toggleHideConfirmed()"><span style="display:flex;align-items:center;gap:8px">${hideConfirmed?I.eyeOff:I.eye} Hide confirmed</span><span class="gear-toggle-mini ${hideConfirmed?'on':''}"></span></button><div class="gear-separator"></div><button class="gear-item" onclick="printReport()">${I.print} Print Report</button><div class="gear-separator"></div><button class="gear-item" onclick="exportData()">${I.download} Export Data</button><button class="gear-item" onclick="document.getElementById('impFile').click();gearOpen=false">${I.upload} Import Data</button><input type="file" id="impFile" accept=".json" style="display:none" onchange="importData(this.files[0])"><div class="gear-separator"></div><button class="gear-item danger" onclick="deleteMonth()">${I.trash} Delete This Month</button></div>`:''}</div></div></div></div>`;
+  if(gearOpen)h+=`<div style="position:fixed;inset:0;z-index:35" onclick="gearOpen=false;render()"></div>`;
+
+  h+='<div class="container">';
+
+  // Print-only header
+  const printDate=new Date().toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'});
+  h+=`<div class="print-header"><div><div class="print-title">Family Budget — ${ml(cur)}</div><div class="print-date">Printed ${printDate}</div></div><div style="text-align:right"><div style="font-size:11px;color:#475569">Starting: ${fmtBal(s.start)}</div></div></div>`;
+
+  // Summary - hero STARTING balance + stat cards (Ending Balance lives at the bottom)
+  const pct=s.total?Math.round(s.confirmed/s.total*100):0;
+  const pctCol=pct===100?'var(--confirm)':pct>=50?'var(--accent)':'var(--warn)';
+  h+=`<div class="summary-bar">
+    <div class="hero-card">
+      <div class="hero-label">Starting Balance · ${ml(cur)}</div>
+      <div class="hero-balance ${s.start<0?'neg':''}">${fmtBal(s.start)}</div>
+      <div class="hero-sub"><span class="hero-start-dot"></span>${isLinked?'Linked from '+ml(pm(cur)):'Manually set'}</div>
+      <div class="hero-progress">
+        <div class="hero-progress-top"><span class="hero-progress-label">Confirmed</span><span class="hero-progress-val">${s.confirmed} of ${s.total} · ${pct}%</span></div>
+        <div class="hero-progress-track"><div class="hero-progress-fill" style="width:${pct}%;background:${pctCol}"></div></div>
+      </div>
+    </div>
+    <div class="stat-cards">
+      <div class="summary-card"><div class="summary-label">Income</div><div class="summary-value positive">▲ ${fmtBal(s.income)}</div></div>
+      <div class="summary-card"><div class="summary-label">Expenses</div><div class="summary-value negative">▼ ${fmtBal(Math.abs(s.expenses))}</div></div>
+      <div class="summary-card"><div class="summary-label">Ending</div><div class="summary-value ${s.ending>=0?'neutral':'negative'}">${fmtBal(s.ending)}</div></div>
+    </div>
+  </div>`;
+
+  // Toolbar
+  let startCls='',startStatus='';
+  if(isLinked){startCls='linked';startStatus=`<span class="starting-bal-status linked">${I.link} Linked</span>`}
+  else if(startManual){startCls='manual';startStatus=`<span class="starting-bal-status manual">Manual</span>`}
+  const linkBtn=startManual?`<button class="btn btn-link-prev" onclick="relinkBalance()">${I.link} Link to Previous</button>`:'';
+  h+=`<div class="toolbar"><div class="toolbar-left"><input type="text" class="search-input" id="searchInp" placeholder="Search..." value="${esc(searchQ)}"><select class="filter-select" id="catFilterSel"><option value="All"${catFilter==='All'?' selected':''}>All Categories</option>${catOpts(catFilter)}</select></div><div class="toolbar-right">${linkBtn}<div class="starting-bal-wrap ${startCls}"><span class="starting-bal-label">Start:${startStatus}</span><span style="color:#64748b">$</span><input type="text" class="starting-bal-input" id="startBalInp" value="${s.start.toFixed(2)}" onchange="setStartBal(this.value)" title="${isLinked?'Auto-linked from previous month. Type a value to override.':'Manually set'}"></div></div></div>`;
+
+  // v4: Filter chips
+  const counts={
+    all:m.transactions.length,
+    pending:m.transactions.filter(t=>!t.confirmed).length,
+    confirmed:s.confirmed,
+    income:m.transactions.filter(t=>eff(t)>0).length,
+    expenses:m.transactions.filter(t=>eff(t)<0).length,
+  };
+  h+='<div class="chips-row">';
+  ['all','pending','confirmed','income','expenses'].forEach(f=>{
+    const lbl=f.charAt(0).toUpperCase()+f.slice(1);
+    h+=`<button class="chip ${filter===f?'active':''}" onclick="filter='${f}';render()">${lbl}<span class="chip-count">${counts[f]}</span></button>`;
+  });
+  h+='</div>';
+
+  // Bulk action bar
+  if(selected.size>0){
+    h+=`<div class="bulk-bar"><span class="bulk-count">${selected.size} selected</span><div class="bulk-actions"><button class="btn btn-sm btn-secondary" onclick="bulkCopy()">${I.copy} Copy</button><button class="btn btn-sm btn-secondary btn-danger" onclick="bulkDelete()">${I.trash} Delete</button><button class="btn btn-sm btn-ghost" onclick="selected.clear();render()">Clear</button></div></div>`;
+  }
+
+  // Table
+  if(txns.length===0){
+    h+=`<div class="empty-state">${m.transactions.length===0?'No transactions yet. Add one or pull from another month.':'No transactions match your filter.'}</div>`;
+  } else {
+    h+='<div class="txn-table-wrap"><table class="txn-table"><thead><tr>';
+    h+=`<th class="c print-hide" style="width:32px"><input type="checkbox" class="sel-cb-th" ${selected.size===txns.length&&txns.length>0?'checked':''} onchange="toggleSelectAll()"></th>`;
+    h+='<th style="width:54px" class="c">Day</th>';
+    h+='<th>Description</th>';
+    h+='<th>Company</th>';
+    h+='<th style="width:100px">Category</th>';
+    h+='<th class="r" style="width:120px">Amount</th>';
+    h+='<th class="r" style="width:110px">Balance</th>';
+    h+='<th class="c" style="width:38px">✓</th>';
+    h+='<th class="print-hide" style="width:90px"></th>';
+    h+='</tr></thead><tbody>';
+
+    let confirmedHidden=0;
+    let lastRowDay=-1;
+    txns.forEach(t=>{
+      // v4: hide confirmed (only when not on confirmed-only filter)
+      if(hideConfirmed&&t.confirmed&&filter!=='confirmed'){confirmedHidden++;return}
+      const v=eff(t);const edited=t.confirmed&&t.actual!==null&&t.actual!==undefined;
+      const bal=balMap[t.id];
+      const balWarn=bal<D.settings.warnRed?'balwarn-red':bal<D.settings.warnOrange?'balwarn-orange':'';
+      const rc=[t.confirmed?'confirmed':'',rowType(t),selected.has(t.id)?'selected-row':'',balWarn].filter(Boolean).join(' ');
+      const arrow=v>0?'<span class="amt-arrow">▲</span>':v<0?'<span class="amt-arrow">▼</span>':'';
+      const amtHtml=edited?`<span class="amt-strikethrough">${fmt(t.projected)}</span>${arrow}${fmt(t.actual)}`:`${arrow}${fmt(t.projected)}`;
+      const notePreview=t.note?`<div class="desc-note-preview">${esc(t.note.split('\n')[0].substring(0,80))}</div>`:'';
+      const cUp=canMoveUp(t.id,allSorted),cDn=canMoveDown(t.id,allSorted);
+      const recurMark=t.seriesId?`<span class="recurring-mark" title="Recurring">↻</span>`:'';
+
+      h+=`<tr class="${rc}" ondblclick="openEdit('${t.id}')">`;
+      h+=`<td class="c print-hide"><input type="checkbox" class="sel-cb" ${selected.has(t.id)?'checked':''} onchange="toggleSelect('${t.id}')"></td>`;
+      h+=`<td class="c"><span class="editable" onclick="inlineEdit('${t.id}','day',this)">${t.day}</span><div class="dow-cell">${dow(cur,t.day)}</div></td>`;
+      h+=`<td><div class="desc-cell"><span><span class="editable txn-desc-text" onclick="inlineEdit('${t.id}','description',this)">${esc(t.description)}</span>${recurMark}</span>${notePreview}</div></td>`;
+      h+=`<td><span class="editable company-text" onclick="inlineEdit('${t.id}','company',this)">${esc(t.company||'')}</span></td>`;
+      h+=`<td><span class="cat-badge" style="background:${catCol(t.category)}">${esc(t.category)}</span></td>`;
+      h+=`<td class="r"><span class="amt ${amtCls(v)} editable" onclick="inlineEdit('${t.id}','projected',this)">${amtHtml}</span></td>`;
+      h+=`<td class="r"><span class="amt-balance ${amtCls(bal)}">${fmtBal(bal)}</span></td>`;
+      h+=`<td class="c"><div class="confirm-check ${t.confirmed?'checked':''}" onclick="showConfirmPop('${t.id}',this)" title="${t.confirmed?'Unconfirm':'Confirm'}">${t.confirmed?I.check:''}</div></td>`;
+      h+=`<td class="print-hide"><div class="row-actions"><button class="row-action" onclick="moveUp('${t.id}')" title="Move up" ${cUp?'':'disabled'}>${I.up}</button><button class="row-action" onclick="moveDown('${t.id}')" title="Move down" ${cDn?'':'disabled'}>${I.down}</button><button class="row-action" onclick="openEdit('${t.id}')" title="Edit">${I.edit}</button><button class="row-action" onclick="cloneTxn('${t.id}')" title="Clone">${I.copy}</button><button class="row-action del" onclick="if(confirm('Delete?'))deleteTxn('${t.id}')" title="Delete">${I.trash}</button></div></td>`;
+      h+='</tr>';
+    });
+
+    h+='</tbody></table></div>';
+
+    if(confirmedHidden>0){
+      h+=`<div class="hidden-strip" onclick="toggleHideConfirmed()">${confirmedHidden} confirmed transaction${confirmedHidden!==1?'s':''} hidden — click to show</div>`;
+    }
+
+    // Print-only ending balance
+    h+=`<div class="print-ending"><span class="lbl">Ending Balance:</span><span style="color:${s.ending>=0?'#059669':'#dc2626'}">${fmtBal(s.ending)}</span></div>`;
+  }
+
+  // Bottom bar: timestamps + ending balance
+  h+=`<div class="balance-bar"><div class="toolbar-left"><div class="timestamps-bar" style="margin:0"><div class="ts-item">Updated: <strong>${fmtTs(D.lastUpdated)}</strong></div><div class="ts-item"><span class="backup-dot ${backupClass(D.lastBackup)}"></span>Backup: <strong>${fmtTs(D.lastBackup)}</strong></div></div></div>${m.transactions.length>0?`<div class="toolbar-right"><div class="ending-bal-wrap"><span class="ending-bal-label">Ending Balance:</span><span class="ending-bal-value ${s.ending>=0?'positive':'negative'}">${fmtBal(s.ending)}</span></div></div>`:''}</div>`;
+
+  h+='</div>'; // container
+
+  // --- Modals ---
+  if(modal==='add'){
+    h+=`<div class="modal-backdrop" onclick="modal=null;render()"><div class="modal" onclick="event.stopPropagation()"><div class="modal-header"><div class="modal-title">Add Transaction</div><button class="modal-close" onclick="modal=null;render()">${I.x}</button></div><div class="modal-body">`;
+    h+=`<div class="form-row"><div class="form-group" style="flex:0 0 80px"><label class="form-label">Day</label><input type="number" class="form-input" id="addDay" min="1" max="31" value="1"></div><div class="form-group"><label class="form-label">Description</label><input class="form-input" id="addDesc" placeholder="e.g., Mortgage Payment"></div></div>`;
+    h+=`<div class="form-group"><label class="form-label">Company</label><input class="form-input" id="addCo" placeholder="e.g., Freedom Mortgage"></div>`;
+    h+=`<div class="form-row"><div class="form-group"><label class="form-label">Category</label><select class="form-select" id="addCat" onchange="onAddCatChange(this.value)">${catOpts('Loan')}</select></div><div class="form-group"><label class="form-label">Type</label><select class="form-select" id="addType">${typeOpts('EFT')}</select></div><div class="form-group"><label class="form-label">Frequency</label><select class="form-select" id="addFreq">${freqOpts('Monthly')}</select></div></div>`;
+    h+=`<div class="form-group"><label class="form-label">Amount</label><div class="sign-toggle"><button type="button" id="addSignExpense" class="sign-btn expense ${addState.sign===-1?'active':''}" onclick="setAddSign(-1)">▼ Expense</button><button type="button" id="addSignIncome" class="sign-btn income ${addState.sign===1?'active':''}" onclick="setAddSign(1)">▲ Income</button></div><div class="amt-input-wrap"><span class="amt-input-prefix">$</span><input type="number" step="0.01" min="0" class="form-input" id="addAmt" placeholder="0.00"></div></div>`;
+    h+=`<div class="form-group"><label class="form-label">Note (optional)</label><textarea class="form-textarea" id="addNote" rows="2"></textarea></div>`;
+    h+=`<div class="recur-panel"><div class="recur-toggle"><label onclick="toggleRecur()">↻ Recurring transaction</label><div class="recur-switch ${recurState.enabled?'on':''}" onclick="toggleRecur()"></div></div>`;
+    if(recurState.enabled){
+      const{year:curYr}=pk(cur);
+      if(!recurState.advanced){
+        h+=`<div class="recur-default-note">Repeats <strong>monthly</strong> through <strong>December ${curYr}</strong>.</div>`;
+      } else {
+        h+=`<div class="form-row" style="margin-bottom:0"><div class="form-group" style="margin-bottom:0"><label class="form-label">Repeats</label><select class="form-select" onchange="recurState.freq=this.value">${recurFreqOpts(recurState.freq)}</select></div><div class="form-group" style="margin-bottom:0"><label class="form-label">Ends</label><select class="form-select" onchange="setRecurEndType(this.value)"><option value="eoy"${recurState.endType==='eoy'?' selected':''}>End of year (Dec ${curYr})</option><option value="months"${recurState.endType==='months'?' selected':''}>Number of months</option><option value="count"${recurState.endType==='count'?' selected':''}>After N occurrences</option><option value="date"${recurState.endType==='date'?' selected':''}>On date</option><option value="never"${recurState.endType==='never'?' selected':''}>Never (5 yrs max)</option></select></div></div>`;
+        if(recurState.endType==='months')h+=`<div class="form-group" style="margin-top:10px;margin-bottom:0"><label class="form-label">Number of months</label><input type="number" class="form-input" min="1" max="200" value="${recurState.endMonths}" onchange="recurState.endMonths=parseInt(this.value)||1" placeholder="e.g. 6"></div>`;
+        if(recurState.endType==='date')h+=`<div class="form-group" style="margin-top:10px;margin-bottom:0"><label class="form-label">End date</label><input type="date" class="form-input" value="${recurState.endDate}" onchange="recurState.endDate=this.value"></div>`;
+        if(recurState.endType==='count')h+=`<div class="form-group" style="margin-top:10px;margin-bottom:0"><label class="form-label">Number of occurrences</label><input type="number" class="form-input" min="1" max="200" value="${recurState.endCount}" onchange="recurState.endCount=parseInt(this.value)||12"></div>`;
+      }
+      h+=`<button type="button" class="recur-adv-toggle" onclick="toggleRecurAdvanced()">${recurState.advanced?'▲ Hide advanced options':'▾ Advanced options'}</button>`;
+      h+=`<div class="recur-warn">Creates transactions in future months. New future months auto-link their starting balance to the previous month.</div>`;
+    }
+    h+=`</div></div><div class="modal-footer"><button class="btn btn-secondary" onclick="modal=null;render()">Cancel</button><button class="btn btn-primary" onclick="submitAdd()">${I.plus} Add</button></div></div></div>`;
+  }
+
+  if(modal==='edit'&&editId){
+    const t=getM().transactions.find(t=>t.id===editId);
+    if(t){
+      if(editState._id!==t.id){editState={sign:t.projected>=0?1:-1,_id:t.id}}
+      const isRecurring=!!t.seriesId;
+      h+=`<div class="modal-backdrop" onclick="modal=null;editId=null;editState={sign:-1,_id:null};render()"><div class="modal" onclick="event.stopPropagation()"><div class="modal-header"><div class="modal-title">Edit Transaction${isRecurring?' <span style="font-size:.8rem;font-weight:500;color:#64748b;margin-left:6px">↻ recurring</span>':''}</div><button class="modal-close" onclick="modal=null;editId=null;editState={sign:-1,_id:null};render()">${I.x}</button></div><div class="modal-body">`;
+      h+=`<div class="form-row"><div class="form-group" style="flex:0 0 80px"><label class="form-label">Day</label><input type="number" class="form-input" id="eDay" min="1" max="31" value="${t.day}"></div><div class="form-group"><label class="form-label">Description</label><input class="form-input" id="eDesc" value="${esc(t.description)}"></div></div>`;
+      h+=`<div class="form-group"><label class="form-label">Company</label><input class="form-input" id="eCo" value="${esc(t.company||'')}"></div>`;
+      h+=`<div class="form-row"><div class="form-group"><label class="form-label">Category</label><select class="form-select" id="eCat" onchange="onEditCatChange(this.value)">${catOpts(t.category)}</select></div><div class="form-group"><label class="form-label">Type</label><select class="form-select" id="eType">${typeOpts(t.type)}</select></div><div class="form-group"><label class="form-label">Frequency</label><select class="form-select" id="eFreq">${freqOpts(t.frequency)}</select></div></div>`;
+      h+=`<div class="form-row"><div class="form-group"><label class="form-label">Amount</label><div class="sign-toggle"><button type="button" id="editSignExpense" class="sign-btn expense ${editState.sign===-1?'active':''}" onclick="setEditSign(-1)">▼ Expense</button><button type="button" id="editSignIncome" class="sign-btn income ${editState.sign===1?'active':''}" onclick="setEditSign(1)">▲ Income</button></div><div class="amt-input-wrap"><span class="amt-input-prefix">$</span><input type="number" step="0.01" min="0" class="form-input" id="eAmt" value="${Math.abs(t.projected)}"></div></div><div class="form-group"><label class="form-label">Status</label><div style="padding:8px 0;font-size:.9rem;font-weight:500;color:${t.confirmed?'#059669':'#ca8a04'}">${t.confirmed?'✓ Confirmed'+(t.actual!==null&&t.actual!==undefined?' — actual: '+fmt(t.actual):''):'⏳ Pending'}</div></div></div>`;
+      h+=`<div class="form-group"><label class="form-label">Note</label><textarea class="form-textarea" id="eNote" rows="3">${esc(t.note||'')}</textarea></div>`;
+      h+=`</div><div class="modal-footer modal-footer-spread">`;
+      if(isRecurring){
+        h+=`<button class="btn btn-secondary btn-danger" onclick="seriesActionId='${t.id}';modal='series-delete';render()">${I.trash} Delete Recurring...</button>`;
+      } else {
+        h+=`<button class="btn btn-secondary btn-danger" onclick="if(confirm('Delete?'))deleteTxn('${t.id}')">${I.trash} Delete</button>`;
+      }
+      h+=`<div style="display:flex;gap:8px"><button class="btn btn-secondary" onclick="modal=null;editId=null;editState={sign:-1,_id:null};render()">Cancel</button><button class="btn btn-primary" onclick="submitEdit('${t.id}',${isRecurring})">Save</button></div></div></div></div>`;
+    }
+  }
+
+  // v4: Series edit choice modal
+  if(modal==='series-edit'&&seriesActionId){
+    const id=seriesActionId;
+    h+=`<div class="modal-backdrop" onclick="modal=null;seriesActionId=null;seriesAction=null;render()"><div class="modal" style="max-width:480px" onclick="event.stopPropagation()"><div class="modal-header"><div class="modal-title">Apply changes to...</div><button class="modal-close" onclick="modal=null;seriesActionId=null;seriesAction=null;render()">${I.x}</button></div><div class="modal-body">`;
+    h+=`<button class="choice-btn" onclick="updateTxn('${id}',seriesAction.updates);modal=null;editId=null;editState={sign:-1,_id:null};seriesActionId=null;seriesAction=null;toast('Updated')"><div class="choice-btn-title">This occurrence only</div><div class="choice-btn-sub">Other occurrences in the series stay unchanged</div></button>`;
+    h+=`<button class="choice-btn" onclick="updateSeriesFromHere('${id}',seriesAction.updates);editState={sign:-1,_id:null};seriesActionId=null;seriesAction=null"><div class="choice-btn-title">This and future occurrences</div><div class="choice-btn-sub">Past occurrences stay unchanged</div></button>`;
+    h+=`</div><div class="modal-footer"><button class="btn btn-secondary" onclick="modal=null;seriesActionId=null;seriesAction=null;render()">Cancel</button></div></div></div>`;
+  }
+
+  // v4: Series delete choice modal
+  if(modal==='series-delete'&&seriesActionId){
+    const id=seriesActionId;
+    h+=`<div class="modal-backdrop" onclick="modal=null;seriesActionId=null;render()"><div class="modal" style="max-width:480px" onclick="event.stopPropagation()"><div class="modal-header"><div class="modal-title">Delete...</div><button class="modal-close" onclick="modal=null;seriesActionId=null;render()">${I.x}</button></div><div class="modal-body">`;
+    h+=`<button class="choice-btn" onclick="deleteTxn('${id}');seriesActionId=null"><div class="choice-btn-title">This occurrence only</div><div class="choice-btn-sub">Other occurrences stay</div></button>`;
+    h+=`<button class="choice-btn" onclick="deleteSeriesFromHere('${id}');seriesActionId=null"><div class="choice-btn-title">This and future occurrences</div><div class="choice-btn-sub">Past occurrences stay</div></button>`;
+    h+=`<button class="choice-btn" onclick="const t=getM().transactions.find(x=>x.id==='${id}');if(t&&t.seriesId)deleteSeriesAll(t.seriesId);seriesActionId=null"><div class="choice-btn-title" style="color:#dc2626">Entire series</div><div class="choice-btn-sub">All occurrences past, present, and future</div></button>`;
+    h+=`</div><div class="modal-footer"><button class="btn btn-secondary" onclick="modal=null;seriesActionId=null;render()">Cancel</button></div></div></div>`;
+  }
+
+  if(modal==='settings'){
+    const tabs=[['categories','Categories'],['types','Payment Types'],['frequencies','Frequencies'],['alerts','Alerts']];
+    let body='';
+    if(settingsTab==='categories'){
+      body=`<div style="display:flex;gap:8px;margin-bottom:14px"><input class="form-input" id="newCatN" placeholder="New category name..."><input type="color" id="newCatC" value="#64748b" style="width:40px;height:36px;border:1px solid #e2e8f0;border-radius:6px;cursor:pointer;padding:2px"><button class="btn btn-primary" onclick="addCat()">${I.plus} Add</button></div><div>${D.categories.map(c=>{let cnt=0;Object.values(D.months).forEach(m=>{cnt+=m.transactions.filter(t=>t.category===c.name).length});return`<div class="cat-item"><div class="cat-color-dot" style="background:${c.color}" onclick="editCatColor('${esc(c.name)}')" title="Change color"></div><div class="cat-name">${esc(c.name)}</div><div class="cat-count">${cnt}</div><div style="display:flex;gap:4px"><button class="row-action" onclick="editCatName('${esc(c.name)}')" title="Rename">${I.edit}</button><button class="row-action del" onclick="delCat('${esc(c.name)}')" title="Delete">${I.trash}</button></div></div>`}).join('')}</div>`;
+    } else if(settingsTab==='types'||settingsTab==='frequencies'){
+      const listKey=settingsTab==='types'?'types':'frequencies';
+      const field=settingsTab==='types'?'type':'frequency';
+      const label=settingsTab==='types'?'payment type':'frequency';
+      body=`<div style="display:flex;gap:8px;margin-bottom:14px"><input class="form-input" id="newListN" placeholder="New ${label}..."><button class="btn btn-primary" onclick="addListItem('${listKey}','newListN')">${I.plus} Add</button></div><div>${D.settings[listKey].map(v=>{const cnt=countUse(field,v);return`<div class="cat-item"><div class="cat-name">${esc(v)}</div><div class="cat-count">${cnt}</div><div style="display:flex;gap:4px"><button class="row-action" onclick="renameListItem('${listKey}','${field}','${esc(v)}')" title="Rename">${I.edit}</button><button class="row-action del" onclick="delListItem('${listKey}','${field}','${esc(v)}')" title="Delete">${I.trash}</button></div></div>`}).join('')}</div>${settingsTab==='frequencies'?'<p style="font-size:.78rem;color:#94a3b8;margin-top:12px">Note: the Frequency field is informational. Recurring-schedule options (Monthly, Weekly, etc.) are fixed because they drive date generation.</p>':''}`;
+    } else if(settingsTab==='alerts'){
+      body=`<p style="font-size:.88rem;color:#64748b;margin-bottom:16px">Rows fade to a warning color when the running balance drops below these amounts.</p>
+      <div class="form-row"><div class="form-group"><label class="form-label">Orange warning below ($)</label><input type="number" step="50" min="0" class="form-input" value="${D.settings.warnOrange}" onchange="setWarn('warnOrange',this.value)"></div><div class="form-group"><label class="form-label">Red warning below ($)</label><input type="number" step="50" min="0" class="form-input" value="${D.settings.warnRed}" onchange="setWarn('warnRed',this.value)"></div></div>
+      <div style="margin-top:6px;border-radius:8px;overflow:hidden;border:1px solid #e2e8f0"><div style="padding:9px 12px;font-size:.8rem;background:linear-gradient(to right,#fff 0%,#fff 35%,#fed7aa 100%)">Balance below ${fmtBal(D.settings.warnOrange)}</div><div style="padding:9px 12px;font-size:.8rem;background:linear-gradient(to right,#fff 0%,#fff 30%,#fecaca 100%)">Balance below ${fmtBal(D.settings.warnRed)}</div></div>
+      ${D.settings.warnRed>D.settings.warnOrange?'<p style="font-size:.78rem;color:#dc2626;margin-top:10px">Heads up: the red threshold is above the orange one, so orange will never show.</p>':''}`;
+    }
+    h+=`<div class="modal-backdrop" onclick="modal=null;render()"><div class="modal" onclick="event.stopPropagation()"><div class="modal-header"><div class="modal-title">Settings</div><button class="modal-close" onclick="modal=null;render()">${I.x}</button></div><div class="settings-tabs">${tabs.map(([k,l])=>`<button class="settings-tab ${settingsTab===k?'active':''}" onclick="settingsTab='${k}';render()">${l}</button>`).join('')}</div><div class="modal-body">${body}</div></div></div>`;
+  }
+
+  if(modal==='pull'||modal==='pull-init'){const other=allKeys().filter(k=>k!==cur);const defSrc=modal==='pull-init'?pm(cur):(other.length?other[other.length-1]:'');const isInit=modal==='pull-init';h+=`<div class="modal-backdrop" onclick="modal=null;render()"><div class="modal" style="max-width:720px" onclick="event.stopPropagation()"><div class="modal-header"><div class="modal-title">${isInit?'Set Up '+ml(cur)+' — Pull Transactions':'Pull Transactions'}</div><button class="modal-close" onclick="modal=null;render()">${I.x}</button></div><div class="modal-body">${isInit?'<p style="font-size:.9rem;color:#64748b;margin-bottom:14px">Select recurring transactions to pull into the new month, or skip to start empty.</p>':''}${!D.months[defSrc]?'<div class="empty-state">No other months to pull from.</div>':`<div class="pull-controls"><label class="form-label" style="margin:0">From:</label><select class="form-select" id="pullSrc" onchange="renderPull()" style="min-width:160px">${other.map(k=>`<option value="${k}"${k===defSrc?' selected':''}>${ml(k)}</option>`).join('')}</select><select class="pull-filter" id="pullCatFilter" onchange="renderPull()"><option value="All">All Categories</option>${catOpts('')}</select><button class="btn btn-sm btn-secondary" onclick="togglePullAll()">Select All</button></div><div class="pull-header-info" id="pullInfo">Select transactions below</div><div class="pull-list" id="pullList"></div>`}</div><div class="modal-footer">${isInit?`<button class="btn btn-secondary" onclick="modal=null;render()">Skip</button>`:`<button class="btn btn-secondary" onclick="modal=null;render()">Cancel</button>`}<button class="btn btn-primary" onclick="submitPull()">${I.pull} Pull Selected</button></div></div></div>`}
+
+  // Confirm Popover
+  if(confirmPop){const t=getM().transactions.find(t=>t.id===confirmPop.id);if(t){h+=`<div class="overlay" onclick="confirmPop=null;render()"></div><div class="confirm-popover" style="left:${confirmPop.left}px;top:${confirmPop.top}px" onclick="event.stopPropagation()"><div class="confirm-popover-desc">${esc(t.description)}</div>${confirmPop.partial?`<div class="confirm-popover-question">Amount cleared so far ($):</div><input type="number" step="0.01" min="0" class="confirm-edit-input" id="confPartialInp" placeholder="e.g. 200" onkeydown="if(event.key==='Enter')confPartialSave();if(event.key==='Escape'){confirmPop=null;render()}"><div class="confirm-popover-btns"><button class="btn btn-primary btn-sm" onclick="confPartialSave()">${I.check} Save</button><button class="btn btn-secondary btn-sm" onclick="confirmPop=null;render()">Cancel</button></div>`:!confirmPop.editing?`<div class="confirm-popover-amount">${fmt(t.projected)}</div><div class="confirm-popover-question">Is this amount correct?</div><div class="confirm-popover-btns"><button class="btn btn-primary btn-sm" onclick="confirmTxn('${t.id}',${t.projected})">${I.check} Confirm</button><button class="btn btn-secondary btn-sm" onclick="confirmPop.editing=true;render()">Edit Amount</button><button class="btn btn-secondary btn-sm" onclick="confirmPop.partial=true;render()">Partial</button></div>`:`<div class="confirm-popover-question">Enter the actual amount:</div><input type="number" step="0.01" class="confirm-edit-input" id="confEditInp" value="${t.projected}" onkeydown="if(event.key==='Enter')confSave();if(event.key==='Escape'){confirmPop=null;render()}"><div class="confirm-popover-btns"><button class="btn btn-primary btn-sm" onclick="confSave()">${I.check} Save</button><button class="btn btn-secondary btn-sm" onclick="confirmPop=null;render()">Cancel</button></div>`}</div>`}}
+
+  document.getElementById('app').innerHTML=h;
+  document.getElementById('searchInp')?.addEventListener('input',e=>{searchQ=e.target.value;render()});
+  document.getElementById('catFilterSel')?.addEventListener('change',e=>{catFilter=e.target.value;render()});
+  setTimeout(()=>{document.getElementById('addDesc')?.focus();document.getElementById('confEditInp')?.focus();document.getElementById('confPartialInp')?.focus();if(modal==='pull'||modal==='pull-init')renderPull()},30);
+}
+
+load();render();
+</script>
+</body>
+</html>
